@@ -1,12 +1,9 @@
 # src/reader/feeds/registry.py
 import json
-import os
 from pathlib import Path
-from typing import Dict, List, Optional, Union
+from typing import Dict, List, Optional
 
 from reader.feeds.base import FeedSource
-from reader.feeds.atom import AtomFeedSource
-from reader.feeds.rss import RSSFeedSource
 
 class FeedRegistry:
     """Manages registration and retrieval of feed sources."""
@@ -14,7 +11,7 @@ class FeedRegistry:
     def __init__(self, config_file: Optional[Path] = None):
         if config_file is None:
             # Default config location
-            config_dir = Path.home() / ".config" / "biofeed"
+            config_dir = Path.home() / ".config" / "bio-reader"
             config_dir.mkdir(parents=True, exist_ok=True)
             self.config_file = config_dir / "feeds.json"
         else:
@@ -34,11 +31,9 @@ class FeedRegistry:
                 feed_data = json.load(f)
             
             for feed_id, feed_info in feed_data.items():
-                self._create_feed_source(
-                    feed_id, 
+                self.feeds[feed_id] = FeedSource(
                     feed_info["name"], 
                     feed_info["url"], 
-                    feed_info["type"],
                     feed_info.get("category", "general")
                 )
         except (json.JSONDecodeError, KeyError) as e:
@@ -48,11 +43,10 @@ class FeedRegistry:
     def _initialize_default_feeds(self) -> None:
         """Create default feeds configuration."""
         self.add_feed(
-            "nature_bioinformatics",
+            "nature_bioinformatics", 
             "Nature Bioinformatics", 
             "https://www.nature.com/subjects/bioinformatics.atom",
-            "atom",
-            "bioinformatics"
+            "general"
         )
         self._save_feeds()
     
@@ -63,52 +57,17 @@ class FeedRegistry:
             feed_data[feed_id] = {
                 "name": feed.name,
                 "url": feed.url,
-                "type": "atom" if isinstance(feed, AtomFeedSource) else "rss",
                 "category": feed.category
             }
         
         with open(self.config_file, "w") as f:
             json.dump(feed_data, f, indent=2)
     
-    def _create_feed_source(self, feed_id: str, name: str, url: str, 
-                           feed_type: str, category: str) -> FeedSource:
-        """Create appropriate feed source based on type."""
-        if feed_type.lower() == "atom":
-            self.feeds[feed_id] = AtomFeedSource(name, url, category)
-        elif feed_type.lower() == "rss":
-            self.feeds[feed_id] = RSSFeedSource(name, url, category)
-        else:
-            raise ValueError(f"Unsupported feed type: {feed_type}")
-        return self.feeds[feed_id]
-    
-    def add_feed(self, feed_id: str, name: str, url: str, 
-                feed_type: Optional[str] = None, category: str = "general") -> FeedSource:
+    def add_feed(self, feed_id: str, name: str, url: str, category: str = "general") -> FeedSource:
         """Add a new feed source."""
-        # Auto-detect feed type if not specified
-        if feed_type is None:
-            feed_type = self._detect_feed_type(url)
-        
-        feed = self._create_feed_source(feed_id, name, url, feed_type, category)
+        self.feeds[feed_id] = FeedSource(name, url, category)
         self._save_feeds()
-        return feed
-    
-    def _detect_feed_type(self, url: str) -> str:
-        """Detect feed type by examining its content."""
-        import fastfeedparser
-        try:
-            feed_data = fastfeedparser.parse(url)
-            # Look for Atom namespace
-            if hasattr(feed_data, 'namespaces') and 'http://www.w3.org/2005/Atom' in feed_data.namespaces.values():
-                return "atom"
-            # Check for RSS version
-            elif hasattr(feed_data, 'version') and feed_data.version.startswith('rss'):
-                return "rss"
-            else:
-                # Default to RSS if unsure
-                return "rss"
-        except Exception:
-            # Default to RSS if detection fails
-            return "rss"
+        return self.feeds[feed_id]
     
     def remove_feed(self, feed_id: str) -> None:
         """Remove a feed source."""
