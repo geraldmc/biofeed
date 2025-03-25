@@ -1,0 +1,32 @@
+{
+  "nature_bioinformatics": {
+    "name": "Nature Bioinformatics",
+    "url": "https://www.nature.com/subjects/bioinformatics.atom",
+    "type": "atom",
+    "category": "bioinformatics"
+  },
+  "nature_genetics": {
+    "name": "Nature Genetics",
+    "url": "https://www.nature.com/subjects/genetics.atom",
+    "type": "atom",
+    "category": "genetics"
+  },
+  "nature_methods": {
+    "name": "Nature Methods",
+    "url": "https://www.nature.com/subjects/methods.atom",
+    "type": "atom",
+    "category": "methods"
+  },
+  "nature_reviews_cancer": {
+    "name": "Nature Reviews Cancer",
+    "url": "https://www.nature.com/subjects/cancer/reviews.atom",
+    "type": "atom",
+    "category": "cancer"
+  },
+  "oxford_bioinformatics": {
+    "name": "Oxford Bioinformatics",
+    "url": "https://academic.oup.com/rss/site_5139/OpenAccess.xml",
+    "type": "rss",
+    "category": "bioinformatics"
+  }
+}
