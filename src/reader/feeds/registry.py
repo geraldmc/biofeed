@@ -3,7 +3,8 @@ import json
 from pathlib import Path
 from typing import Dict, List, Optional
 
-from reader.feeds.base import FeedSource
+#from reader.feeds.base import FeedSource
+from reader.feeds.feed_source import FeedSource
 
 class FeedRegistry:
     """Manages registration and retrieval of feed sources."""

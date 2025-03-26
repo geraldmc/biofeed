@@ -2,7 +2,8 @@
 from typing import List, Dict
 from datetime import datetime
 import textwrap
-from reader.feeds.base import Article
+#from reader.feeds.base import Article
+from reader.feeds.article import Article
 
 class ArticleFormatter:
     """Formats articles for display in terminal."""
