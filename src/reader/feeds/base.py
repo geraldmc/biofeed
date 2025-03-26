@@ -1,5 +1,5 @@
 # src/reader/feeds/base.py
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Dict, List, Optional, Any
 
@@ -37,7 +37,7 @@ class Article:
     author: Optional[str] = None
     summary: Optional[str] = None
     content: Optional[str] = None
-    categories: List[str] = None
+    categories: List[str] = field(default_factory=list)
 
     def __post_init__(self):
         if self.categories is None:
@@ -49,56 +49,45 @@ class FeedParser:
     @staticmethod
     def parse_feed(feed_data: Any) -> List[Article]:
         """Parse feed data into a list of standardized Article objects."""
-        articles = []
-        
-        # Determine the type of feed by examining its structure
         if hasattr(feed_data, 'entries'):
-            # This is likely a feedparser/fastfeedparser result (RSS or Atom)
-            for index, entry in enumerate(feed_data.entries):
-                # Extract author information
-                author = FeedParser._extract_author(entry)
-                
-                # Extract publication date
-                published = FeedParser._extract_date(entry, ['published', 'pubDate', 'updated'])
-                
-                # Extract updated date
-                updated = FeedParser._extract_date(entry, ['updated', 'modified'])
-                
-                # Extract summary
-                summary = FeedParser._extract_text(entry, ['summary', 'description'])
-                
-                # Extract content
-                content = FeedParser._extract_content(entry)
-                
-                # Extract categories/tags
-                categories = FeedParser._extract_categories(entry)
-                
-                articles.append(Article(
-                    id=str(index),
-                    title=getattr(entry, 'title', 'No Title'),
-                    link=FeedParser._extract_link(entry),
-                    published=published,
-                    updated=updated,
-                    author=author,
-                    summary=summary,
-                    content=content,
-                    categories=categories
-                ))
+            return FeedParser._parse_rss_feed(feed_data)
         elif isinstance(feed_data, dict) and 'items' in feed_data:
-            # This is likely a JSON feed format
-            for index, item in enumerate(feed_data['items']):
-                articles.append(Article(
-                    id=str(index),
-                    title=item.get('title', 'No Title'),
-                    link=item.get('url', item.get('link', '')),
-                    published=item.get('date_published', ''),
-                    updated=item.get('date_modified', ''),
-                    author=FeedParser._extract_json_author(item),
-                    summary=item.get('summary', ''),
-                    content=item.get('content_text', item.get('content_html', '')),
-                    categories=item.get('tags', [])
-                ))
-        
+            return FeedParser._parse_json_feed(feed_data)
+        return []
+
+    @staticmethod
+    def _parse_rss_feed(feed_data: Any) -> List[Article]:
+        articles = []
+        for index, entry in enumerate(feed_data.entries):
+            articles.append(Article(
+                id=str(index),
+                title=getattr(entry, 'title', 'No Title'),
+                link=FeedParser._extract_link(entry),
+                published=FeedParser._extract_date(entry, ['published', 'pubDate', 'updated']),
+                updated=FeedParser._extract_date(entry, ['updated', 'modified']),
+                author=FeedParser._extract_author(entry),
+                summary=FeedParser._extract_text(entry, ['summary', 'description']),
+                content=FeedParser._extract_content(entry),
+                categories=FeedParser._extract_categories(entry)
+            ))
+        return articles
+    
+
+    @staticmethod
+    def _parse_json_feed(feed_data: Dict) -> List[Article]:
+        articles = []
+        for index, item in enumerate(feed_data['items']):
+            articles.append(Article(
+                id=str(index),
+                title=item.get('title', 'No Title'),
+                link=item.get('url', item.get('link', '')),
+                published=item.get('date_published', ''),
+                updated=item.get('date_modified', ''),
+                author=FeedParser._extract_json_author(item),
+                summary=item.get('summary', ''),
+                content=item.get('content_text', item.get('content_html', '')),
+                categories=item.get('tags', [])
+            ))
         return articles
     
     # Helper methods:
