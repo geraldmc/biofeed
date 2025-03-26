@@ -1,8 +1,7 @@
 # src/reader/formatter.py
-from typing import List, Dict
+from typing import List
 from datetime import datetime
 import textwrap
-#from reader.feeds.base import Article
 from reader.feeds.article import Article
 
 class ArticleFormatter:
