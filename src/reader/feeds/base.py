@@ -207,7 +207,7 @@ class FeedParser:
 class FeedSource:
     """Generic feed source that works with multiple formats."""
     
-    def __init__(self, name: str, url: str, category: str = "general", cache_duration: int = _CACHE_DURATION):
+    def __init__(self, name: str, url: str, category: str = "general", cache_duration: int = CACHE_DURATION):
         self.name = name
         self.url = url
         self.category = category
