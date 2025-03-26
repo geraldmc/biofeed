@@ -4,22 +4,17 @@ from datetime import datetime
 from typing import Dict, List, Optional, Any
 
 # Module-level cache
+CACHE_DURATION = 3600  # Default cache duration in seconds (1 hour)
 _CACHE: Dict[str, Any] = {}
 _CACHE_TIMESTAMPS: Dict[str, datetime] = {}
-_CACHE_DURATION = 3600  # Default cache duration in seconds (1 hour)
 
-def get_from_cache(url: str, max_age: Optional[int] = None) -> Optional[Any]:
+def get_from_cache(url: str, max_age: Optional[int] = CACHE_DURATION) -> Optional[Any]:
     """Get an item from cache if it exists and is not too old."""
-    if url not in _CACHE or url not in _CACHE_TIMESTAMPS:
-        return None
-    
-    age = (datetime.now() - _CACHE_TIMESTAMPS[url]).total_seconds()
-    max_age = max_age or _CACHE_DURATION
-    
-    if age > max_age:
-        return None  # Cache is too old
-    
-    return _CACHE[url]
+    if url in _CACHE and url in _CACHE_TIMESTAMPS:
+        age = (datetime.now() - _CACHE_TIMESTAMPS[url]).total_seconds()
+        if age <= max_age:
+            return _CACHE[url]
+    return None
 
 def store_in_cache(url: str, data: Any) -> None:
     """Store an item in the cache."""
@@ -106,8 +101,8 @@ class FeedParser:
         
         return articles
     
-    # Helper methods
-    # (extract_author, extract_json_author, extract_date, extract_text, extract_content, etc.)
+    # Helper methods:
+    # (_extract_author, _extract_json_author, _extract_date, _extract_text, _extract_content, etc.)
 
     @staticmethod
     def _extract_author(entry: Any) -> str:
