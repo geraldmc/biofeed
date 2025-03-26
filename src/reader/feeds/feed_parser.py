@@ -1,47 +1,5 @@
-# src/reader/feeds/base.py
-from dataclasses import dataclass, field
-from datetime import datetime
-from typing import Dict, List, Optional, Any
-
-# Module-level cache
-CACHE_DURATION = 3600  # Default cache duration in seconds (1 hour)
-_CACHE: Dict[str, Any] = {}
-_CACHE_TIMESTAMPS: Dict[str, datetime] = {}
-
-def get_from_cache(url: str, max_age: Optional[int] = CACHE_DURATION) -> Optional[Any]:
-    """Get an item from cache if it exists and is not too old."""
-    if url in _CACHE and url in _CACHE_TIMESTAMPS:
-        age = (datetime.now() - _CACHE_TIMESTAMPS[url]).total_seconds()
-        if age <= max_age:
-            return _CACHE[url]
-    return None
-
-def store_in_cache(url: str, data: Any) -> None:
-    """Store an item in the cache."""
-    _CACHE[url] = data
-    _CACHE_TIMESTAMPS[url] = datetime.now()
-
-def clear_cache() -> None:
-    """Clear the entire cache."""
-    _CACHE.clear()
-    _CACHE_TIMESTAMPS.clear()
-
-@dataclass
-class Article:
-    """Standardized article representation regardless of source format."""
-    id: str
-    title: str
-    link: str
-    published: str
-    updated: Optional[str] = None
-    author: Optional[str] = None
-    summary: Optional[str] = None
-    content: Optional[str] = None
-    categories: List[str] = field(default_factory=list)
-
-    def __post_init__(self):
-        if self.categories is None:
-            self.categories = []
+from typing import Any, List, Dict
+from reader.feeds.article import Article
 
 class FeedParser:
     """Parser for feed formats that converts to standardized Article objects."""
@@ -71,7 +29,6 @@ class FeedParser:
                 categories=FeedParser._extract_categories(entry)
             ))
         return articles
-    
 
     @staticmethod
     def _parse_json_feed(feed_data: Dict) -> List[Article]:
@@ -89,9 +46,9 @@ class FeedParser:
                 categories=item.get('tags', [])
             ))
         return articles
-    
-    # Helper methods:
-    # (_extract_author, _extract_json_author, _extract_date, _extract_text, _extract_content, etc.)
+
+    # Helper methods: (_extract_author, _extract_json_author, _extract_date, 
+    # _extract_text, _extract_content, _extract_categories, _extract_link)
 
     @staticmethod
     def _extract_author(entry: Any) -> str:
@@ -203,66 +160,3 @@ class FeedParser:
                 return links[0]['href']
         
         return ''
-
-class FeedSource:
-    """Generic feed source that works with multiple formats."""
-    
-    def __init__(self, name: str, url: str, category: str = "general", cache_duration: int = CACHE_DURATION):
-        self.name = name
-        self.url = url
-        self.category = category
-        self.cache_duration = cache_duration
-        self._last_fetched = None
-    
-    def fetch(self, force_refresh: bool = False) -> Any:
-        """Fetch the feed content from source or cache."""
-        # Try to get from cache first
-        if not force_refresh:
-            cached_data = get_from_cache(self.url, self.cache_duration)
-            if cached_data:
-                self._last_fetched = _CACHE_TIMESTAMPS[self.url]
-                return cached_data
-        
-        # Cache miss or forced refresh, fetch from source
-        import fastfeedparser
-        try:
-            data = fastfeedparser.parse(self.url)
-            store_in_cache(self.url, data)
-            self._last_fetched = datetime.now()
-            return data
-        except Exception as e:
-            # Try to parse as JSON if RSS/Atom parsing fails
-            try:
-                import requests
-                response = requests.get(self.url)
-                data = response.json()
-                store_in_cache(self.url, data)
-                self._last_fetched = datetime.now()
-                return data
-            except Exception as json_error:
-                # Both parsing methods failed
-                raise ValueError(f"Failed to parse feed at {self.url}: {str(e)}, {str(json_error)}")
-    
-    def get_articles(self, force_refresh: bool = False) -> List[Article]:
-        """Get list of articles in standardized format."""
-        feed_data = self.fetch(force_refresh)
-        return FeedParser.parse_feed(feed_data)
-    
-    def get_article(self, article_id: str) -> Article:
-        """Get a single article by ID."""
-        articles = self.get_articles()
-        try:
-            index = int(article_id)
-            if 0 <= index < len(articles):
-                return articles[index]
-            raise ValueError(f"Article ID {article_id} out of range")
-        except ValueError:
-            # If not an integer index, try matching by ID string
-            for article in articles:
-                if article.id == article_id:
-                    return article
-            raise ValueError(f"Article with ID {article_id} not found")
-    
-    def get_last_fetched(self) -> Optional[datetime]:
-        """Get the timestamp of when this feed was last fetched."""
-        return self._last_fetched
