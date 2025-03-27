@@ -1,7 +1,6 @@
 # src/reader/controller.py
 from typing import Dict, List, Optional
 from reader.feeds.registry import FeedRegistry
-#from reader.feeds.base import FeedSource, Article
 from reader.feeds.feed_source import FeedSource
 from reader.feeds.article import Article
 
