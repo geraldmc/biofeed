@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "biofeed"
+version = "0.1.0"
+description = "A command-line tool for browsing bioinformatics articles from various feeds"
+readme = "README.md"
+authors = [{name = "Gerald McCollam", email = "gerald.mccollam@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "fastfeedparser",
+    "requests",
+    "beautifulsoup4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "mypy",
+]
+
+[project.scripts]
+biofeed = "reader.__main__:main"
