@@ -13,7 +13,9 @@ def handle_feeds_command(controller: ReaderController, args: argparse.Namespace)
         feeds = controller.get_available_feeds()
         print("\nAvailable feeds:")
         for feed in feeds:
-            print(f"  {feed['id']}: {feed['name']} ({feed['category']})")
+            #print(f"  {feed['id']}: {feed['name']} ({feed['category']})")
+            print(f"{feed['id']}\t\t{feed['name']}")
+
         
         active_feed = controller.get_active_feed()
         if active_feed:
