@@ -1,0 +1,32 @@
+{
+  "biorxiv": {
+    "name": "bioRxiv Bioinformatics",
+    "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=bioinformatics",
+    "type": "rss",
+    "category": "bioinformatics"
+  },
+  "bmc": {
+  "name": "BMC Bioinformatics",
+  "url": "https://bmcbioinformatics.biomedcentral.com/articles/most-recent/rss.xml",
+  "type": "rss",
+  "category": "bioinformatics"
+  },
+  "oxford": {
+    "name": "Oxford Bioinformatics",
+    "url": "https://academic.oup.com/rss/site_5139/OpenAccess.xml",
+    "type": "rss",
+    "category": "bioinformatics"
+  },
+  "nature": {
+    "name": "Nature Bioinformatics",
+    "url": "https://www.nature.com/subjects/bioinformatics.atom",
+    "type": "atom",
+    "category": "bioinformatics"
+  },
+  "plos": {
+    "name": "PLOS Computational Biology",
+    "url": "http://feeds.plos.org/ploscompbiol/NewArticles",
+    "type": "rss",
+    "category": "bioinformatics"
+  }
+}

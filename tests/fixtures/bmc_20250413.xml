@@ -1,0 +1,57 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+<channel>
+<title>Most Recent Articles: BMC Bioinformatics</title>
+<link>https://bmcbioinformatics.biomedcentral.com</link>
+<description>Most Recent Articles: BMC Bioinformatics</description>
+<item>
+<title>DTreePred: an online viewer based on machine learning for pathogenicity prediction of genomic variants</title>
+<link>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06113-4</link>
+<description>A significant challenge in precision medicine is confidently identifying mutations detected in sequencing processes that play roles in disease treatment or diagnosis. Furthermore, the lack of representativenes...</description>
+<category>Software</category>
+<pubDate>Wed, 09 Apr 2025 00:00:00 GMT</pubDate>
+<guid>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06113-4</guid>
+<dc:creator>Daniel Henrique Ferreira Gomes, Inácio Gomes Medeiros, Tirzah Braz Petta, Beatriz Stransky and Jorge Estefano Santana de Souza</dc:creator>
+<dc:date>2025-04-09T00:00:00Z</dc:date>
+</item>
+<item>
+<title>Minimum uncertainty as Bayesian network model selection principle</title>
+<link>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06104-5</link>
+<description>Bayesian Network (BN) modeling is a prominent methodology in computational systems biology. However, the incommensurability of datasets frequently encountered in life science domains gives rise to contextual d...</description>
+<category>Research</category>
+<pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate>
+<guid>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06104-5</guid>
+<dc:creator>Grigoriy Gogoshin and Andrei S. Rodin</dc:creator>
+<dc:date>2025-04-08T00:00:00Z</dc:date>
+</item>
+<item>
+<title>DeepMethyGene: a deep-learning model to predict gene expression using DNA methylations</title>
+<link>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06115-2</link>
+<description>Gene expression is the basis for cells to achieve various functions, while DNA methylation constitutes a critical epigenetic mechanism governing gene expression regulation. Here we propose DeepMethyGene, an ad...</description>
+<category>Research</category>
+<pubDate>Tue, 08 Apr 2025 00:00:00 GMT</pubDate>
+<guid>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06115-2</guid>
+<dc:creator>Yuyao Yan, Xinyi Chai, Jiajun Liu, Sijia Wang, Wenran Li and Tao Huang</dc:creator>
+<dc:date>2025-04-08T00:00:00Z</dc:date>
+</item>
+<item>
+<title>Bayesian compositional generalized linear mixed models for disease prediction using microbiome data</title>
+<link>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06114-3</link>
+<description>The primary goal of predictive modeling for compositional microbiome data is to better understand and predict disease susceptibility based on the relative abundance of microbial species. Current approaches in ...</description>
+<category>Research</category>
+<pubDate>Sat, 05 Apr 2025 00:00:00 GMT</pubDate>
+<guid>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06114-3</guid>
+<dc:creator>Li Zhang, Xinyan Zhang, Justin M. Leach, A. K. M. F. Rahman, Carrie R. Howell and Nengjun Yi</dc:creator>
+<dc:date>2025-04-05T00:00:00Z</dc:date>
+</item>
+<item>
+<title>Goistrat: gene-of-interest-based sample stratification for the evaluation of functional differences</title>
+<link>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06109-0</link>
+<description>Understanding the impact of gene expression in pathological processes, such as carcinogenesis, is crucial for understanding the biology of cancer and advancing personalised medicine. Yet, current methods lack ...</description>
+<category>Research</category>
+<pubDate>Sat, 05 Apr 2025 00:00:00 GMT</pubDate>
+<guid>https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-025-06109-0</guid>
+<dc:creator>Carlos Uziel Pérez Malla, Jessica Kalla, Andreas Tiefenbacher, Gabriel Wasinger, Kilian Kluge, Gerda Egger and Raheleh Sheibani-Tezerji</dc:creator>
+<dc:date>2025-04-05T00:00:00Z</dc:date>
+</item>
+</channel>
+</rss>

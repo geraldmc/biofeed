@@ -1,0 +1,651 @@
+<rdf:RDF xmlns:admin="http://webns.net/mvcb/" xmlns="http://purl.org/rss/1.0/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:prism="http://purl.org/rss/1.0/modules/prism/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/">
+<channel rdf:about="https://biorxiv.org">
+<admin:errorReportsTo rdf:resource="mailto:biorxiv@cshlpress.edu"/>
+<title>bioRxiv Subject Collection: Bioinformatics</title>
+<link>https://biorxiv.org</link>
+<description> This feed contains articles for bioRxiv Subject Collection "Bioinformatics" </description>
+<items>
+<rdf:Seq>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647590v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.11.648322v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647598v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647599v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647546v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.08.647887v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647545v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647559v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647568v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.07.647506v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.06.647478v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.06.647498v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.04.647214v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.04.647160v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.04.647182v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.06.647452v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.10.648097v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.10.648110v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.06.647437v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.06.647429v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.06.647430v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.04.647303v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.05.647397v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.05.647412v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.05.647344v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.04.647302v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.06.646254v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.08.645087v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1?rss=1"/>
+<rdf:li rdf:resource="https://www.biorxiv.org/content/10.1101/2025.04.08.647715v1?rss=1"/>
+</rdf:Seq>
+</items>
+<prism:eIssn/>
+<prism:publicationName>bioRxiv</prism:publicationName>
+<prism:issn/>
+<image rdf:resource=""/>
+</channel>
+<image rdf:about="">
+<title>bioRxiv</title>
+<url>https://www.biorxiv.org/sites/default/files/bioRxiv_article.jpg</url>
+<link>https://www.biorxiv.org</link>
+</image>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647590v1?rss=1">
+<title>
+<![CDATA[ SpatioCell: A Deep Learning Algorithm for High-resolution Single-cell Mapping through Deep Integration of Histology Image and Sequencing Data ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647590v1?rss=1 </link>
+<description>
+<![CDATA[ Spatial transcriptomics (ST) enables gene expression analysis within spatial context of tissues. Since most data are limited to multicellular resolution, current computational methods can only estimate cell proportions. To address this gap, we introduce SpatioCell, a framework that integrates imaging data-derived morphological features with transcriptomic measurements for precise single-cell annotation. SpatioCell combines automated adaptive prompting with an optimized vision model for accurate cell segmentation and morphological analysis. Dynamic programming then optimizes cell-type assignments by integrating H&E-derived morphology and transcriptomic constraints, improving resolution within and beyond ST spots. Extensive benchmarking on histopathological, simulated, and real ST data from five distinct cancer types shows that SpatioCell outperforms state-of-the-art methods in both nuclear segmentation and cell annotation accuracy. Notably, SpatioCell reveals tumor microenvironment details, such as tumor boundaries, blood vessel structures, and immune infiltration, that were missed by other methods, while also showing strong potential in correcting deconvolution errors to further increase annotation accuracy. By redefining single-cell spatial mapping with unprecedented accuracy and resolution, SpatioCell enables precise analysis of tissue heterogeneity, offering new insights into cancer and tissue biology. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Hou, N., Wu, Z., Yu, Y., Zhang, Y., Wu, J., Zhong, Z., Xu, F., Wang, Z., Yang, C., Tan, W., Song, J. ]]>
+</dc:creator>
+<dc:date>2025-04-12</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647590</dc:identifier>
+<dc:title>
+<![CDATA[ SpatioCell: A Deep Learning Algorithm for High-resolution Single-cell Mapping through Deep Integration of Histology Image and Sequencing Data ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-12</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.11.648322v1?rss=1">
+<title>
+<![CDATA[ The Role of Ribose Modifications on the Structural Stability of Nucleotide Analogs with α-thiotriphosphate at the Active Site of SARS-CoV-2 RdRp ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.11.648322v1?rss=1 </link>
+<description>
+<![CDATA[ As a promising drug target, RNA-dependent RNA polymerase (RdRp) has attracted much attention recently due to its notable conserved active site, especially in the context of COVID-19 spreading. To inhibit the function of RdRp, nucleotide analog is a common choice for acting as a chain terminator or RNA corruptor. Although some nucleotide analogs have shown the ability to terminate the extension of a nascent strand of SARS-CoV-2, most of them are likely to be excised due to the proofreading of SARS-CoV-2 nsp14/nsp10. A previous experimental study found that introducing sulfur modification into analogs' phosphate moieties ("thio" modification) can break the bottleneck. For instance, Sofosbuvir with -thiotriphosphate modification successfully escaped from the excision of nsp14/10. However, it is unknown how the modified thiotriphosphate affects the structural stability of nucleotide analogs with different ribose modifications at the active site of SARS-CoV-2 RdRp. Thus, in this study, we performed extensive molecular dynamics simulations on four nucleotide analogs with modified thiotriphosphate to elucidate what kind of ribose modification combined with "thio" modification would benefit the analog's structural stability at the active site. We found that the "thio" modification led to the torsion of phosphate moieties, profoundly affecting the overall conformation of analogs and surrounding residues, determining the Watson-Crick base pairing and catalytic efficiency. Interestingly, chemical modification on the ribose, especially the 1' and 3'-ribose positions, increases the structural stability of analogs through hydrogen bond interactions. Our results revealed nucleotide analogs' structural and dynamical features with "thio" modification at the active site, which may contribute to future drug design or repurposing aimed at the SARS-CoV-2 RdRp. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Li, Y., Yuan, S. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.11.648322</dc:identifier>
+<dc:title>
+<![CDATA[ The Role of Ribose Modifications on the Structural Stability of Nucleotide Analogs with α-thiotriphosphate at the Active Site of SARS-CoV-2 RdRp ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647598v1?rss=1">
+<title>
+<![CDATA[ PERSEUcpp: A machine learning strategy to predictcell-penetrating peptides and their uptake efficiency ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647598v1?rss=1 </link>
+<description>
+<![CDATA[ Motivation: Cell-penetrating peptides (CPPs) are promising tools for transporting therapeutic molecules into cells without damaging the cellular membrane. These peptides serve as efficient drug delivery systems, capable of carrying diverse biologically active substances while exhibiting low cytotoxicity compared to non-native molecules. However, identifying CPPs through experimental methods is expensive and time-consuming, making computational strategies an attractive alternative due to their cost-effectiveness and scalability. Results: This study introduces PERSEUcpp, a machine learning strategy designed to identify CPPs. Based on descriptors including physicochemical and structural properties as well as atomic composition, our strategy employs the Extremely Randomized Trees to predict CPPs and their uptake efficiency. The first stage was developed using a balanced dataset of 967 CPPs and non-CPPs, applying a 10-fold cross-validation scheme. Two independent datasets were utilized for validation. The CPP predictor achieved superior results compared to state-of-the-art methods, with MCC 0.854, Recall 0.860, and AUC 0.984. The second stage, focused on efficiency prediction, was trained on a balanced dataset of 140 CPPs and non-CPPs, also using a 10-fold cross-validation scheme, and validated with an independent dataset. The efficiency predictor achieved competitive results, with Recall 0.761 and AUC 0.690. PERSEUcpp is interpretable, offering insights into the key features enabling peptides to penetrate cells effectively. We anticipate that PERSEUcpp will be a valuable tool for advancing the design and application of CPPs in drug delivery and biomedical research. Availability and Implementation: All the source code and datasets are available at GitHub: https://github.com/goalmeida05/PERSEU. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Loch, R. M., Almeida, G. O., Brasiliano, I., meira, W., Montanha, D., Baracat, C., Silveira, S. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647598</dc:identifier>
+<dc:title>
+<![CDATA[ PERSEUcpp: A machine learning strategy to predictcell-penetrating peptides and their uptake efficiency ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647599v1?rss=1">
+<title>
+<![CDATA[ Ontology-based Protein-Protein Interaction Explanation Using Large Language Models ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647599v1?rss=1 </link>
+<description>
+<![CDATA[ Protein-protein interactions (PPIs) play a crucial role in various biological processes, and understanding these interactions is essential for advancing biomedical research. Automated extraction and analysis of PPI information from the rapidly growing scientific literature remains an important challenge. We present a novel ontology-based approach to analyze protein-protein interactions using Large Language Models (LLMs). We applied different learning strategies, namely incontext learning and parameter-efficient instruction fine-tuning for the Llama-2 chat models, to identify keywords in the text that indicate an interaction between a pair of proteins. Our results show that parameter-efficient fine-tuning leads to a performance gain even when the domain is new. The smaller fine-tuned models outperformed the zero-shot performance of much larger models. The keywords identified by the Llama-2 models were mapped to the ontology terms in the Interaction Network Ontology (INO). Our study suggests that a pipeline of an LLM and an ontology is an effective strategy for explaining relations between biomedical entities. This work demonstrates the potential of leveraging ontologies and advanced language models to advance automated PPI analysis from the scientific literature. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Cam, N. B., Rehana, H., Zheng, J., Bansal, B., He, Y., Hur, J., Ozgur, A. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647599</dc:identifier>
+<dc:title>
+<![CDATA[ Ontology-based Protein-Protein Interaction Explanation Using Large Language Models ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647546v1?rss=1">
+<title>
+<![CDATA[ Assessing simulation-based supervised machine learning for demographic parameter inference from genomic data ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647546v1?rss=1 </link>
+<description>
+<![CDATA[ The ever-increasing availability of high-throughput DNA sequences and the development of numerous computational methods have led to considerable advances in our understanding of the evolutionary and demographic history of populations. Several demographic inference methods have been developed to take advantage of these massive genomic data. Simulation-based approaches, such as approximate Bayesian computation (ABC), have proved particularly efficient for complex demographic models. However, taking full advantage of the comprehensive information contained in massive genomic data remains a challenge for demographic inference methods, which generally rely on partial information from these data. Using advanced computational methods, such as machine learning, is valuable for efficiently integrating more comprehensive information. Here, we showed how simulation-based supervised machine learning methods applied to an extensive range of summary statistics are effective in inferring demographic parameters for connected populations. We compared three machine learning (ML) methods: a neural network, the multilayer perceptron (MLP), and two ensemble methods, random forest (RF) and the gradient boosting system XGBoost (XGB), to infer demographic parameters from genomic data under a standard isolation with migration model and a secondary contact model with varying population sizes. We showed that MLP outperformed the other two methods and that, on the basis of permutation feature importance, its predictions involved a larger combination of summary statistics. Moreover, they outperformed all three tested ABC algorithms. Finally, we demonstrated how a method called SHAP, from the field of explainable artificial intelligence, can be used to shed light on the contribution of summary statistics within the ML models. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Quelin, A., Austerlitz, F., Jay, F. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647546</dc:identifier>
+<dc:title>
+<![CDATA[ Assessing simulation-based supervised machine learning for demographic parameter inference from genomic data ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.08.647887v1?rss=1">
+<title>
+<![CDATA[ scnanoseq: an nf-core pipeline for Oxford Nanopore single-cell RNA-sequencing ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.08.647887v1?rss=1 </link>
+<description>
+<![CDATA[ Recent advancements in long-read single-cell RNA sequencing (scRNA-seq) have facilitated the quantification of full-length transcripts and isoforms at the single-cell level. Historically, long-read data would need to be complemented with short-read single-cell data in order to overcome the higher sequencing errors to correctly identify cellular barcodes and unique molecular identifiers. Improvements in Oxford Nanopore sequencing, and development of novel computational methods have removed this requirement. Though these methods now exist, the limited availability of modular and portable workflows remains a challenge. Here we present, nf-core/scnanoseq, a secondary analysis pipeline for long-read single-cell and single-nuclei RNA that delivers gene and transcript-level quantification. The scnanoseq pipeline is implemented using Nextflow and is built upon the nf-core framework, enabling portability across computational environments, scalability and reproducibility of results across pipeline runs. The nf-core/scnanoseq workflow follows best practices for analyzing single-cell and single-nuclei data, performing barcode detection and correction, genome and transcriptome read alignment, unique molecular identifier deduplication, gene and transcript quantification, and extensive quality control reporting. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Trull, A., nf-core community,, Worthey, E. A., Ianov, L. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.08.647887</dc:identifier>
+<dc:title>
+<![CDATA[ scnanoseq: an nf-core pipeline for Oxford Nanopore single-cell RNA-sequencing ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647545v1?rss=1">
+<title>
+<![CDATA[ ASMC: investigating the amino acid diversity of enzyme active sites. ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647545v1?rss=1 </link>
+<description>
+<![CDATA[ Motivation: The analysis of enzyme active sites is essential for understanding their activity in terms of catalyzed reaction and substrate specificity, providing insights for engineering to obtain targeted properties or modify the substrate scope. In 2010, a first version of the Active Site Modeling and Clustering (ASMC) workflow was published. ASMC predicts isofunctional clusters from enzyme families, based on structural modeling and clustering of active sites. Since then, structure- and sequence-based methods have developed considerably. Results: We present here a redesign of the ASMC workflow. This new major version includes recent pocket prediction, structural alignment and clustering methods, as well as a refined amino acid distance matrix, thereby improving the relevance of results and reducing the need for laborious manual analysis to obtain relevant clusters. In addition, we have implemented multiple sequence alignment (MSA) as a possible input for the clustering step, along with an additional script to compare 2D and 3D active sites. Finally, the code has been unified from three to one programming language (Python) to facilitate its installation and maintenance. This new version of ASMC was evaluated on a set of protein families, resulting in overall better performances compared to its original version. Availability and implementation: ASMC is supported on Linux operating system and freely available at https://github.com/labgem/ASMC, along with a complete documentation (wiki, tutorial). ]]>
+</description>
+<dc:creator>
+<![CDATA[ Bailly, T., Elisee, E., Vallenet, D. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647545</dc:identifier>
+<dc:title>
+<![CDATA[ ASMC: investigating the amino acid diversity of enzyme active sites. ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647559v1?rss=1">
+<title>
+<![CDATA[ Using Cancer Profiles to Identify Synthetic Lethal Therapeutic Targets and Predictive Biomarkers in Cancer Gene Dependency Data ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647559v1?rss=1 </link>
+<description>
+<![CDATA[ Large scale loss-of-function screens utilising CRISPR or siRNA can provide profound insights into the importance of individual genes for the survival of a cancer cell and can drive the identification of therapeutic targets and biomarkers, and the development of targeted drugs. However, the analysis of these data and the substantial bodies of metadata that relate to them, is technically challenging and typically requires substantial expertise in data science and computer coding. To facilitate the analysis of cancer gene dependency data by cancer biologists and clinical scientists, we have developed DepMine - a computational toolkit providing a powerful system for framing complex queries relating cancer gene dependency to the underlying genetic changes that occur in cancer cells. DepMine identifies synthetic lethal relationships between putative target genes and complex 'cancer profiles' built from user-specified combinations of mutations, copy-number variation, and expression levels, and can refine these to optimal biomarker definitions for target dependency. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Pearl, L. H., Pearl, F. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647559</dc:identifier>
+<dc:title>
+<![CDATA[ Using Cancer Profiles to Identify Synthetic Lethal Therapeutic Targets and Predictive Biomarkers in Cancer Gene Dependency Data ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647568v1?rss=1">
+<title>
+<![CDATA[ Targeting Ubiquitin-Specific Protease 7 (USP7): A Pharmacophore-Guided Drug Repurposing and Physics-Based Molecular Simulations Study ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647568v1?rss=1 </link>
+<description>
+<![CDATA[ Ubiquitin-Specific Protease 7 (USP7) has emerged as a critical therapeutic target in cancer due to its regulatory roles of tumor suppressors, oncoproteins, and epigenetic modifiers. In this study, we present a comprehensive drug repurposing strategy to identify potential USP7 inhibitors from a curated library of 6,654 FDA-approved and investigational small molecules. Using structure-based pharmacophore models derived from USP7-inhibitor crystal structures, we conducted virtual screening to select candidates with favorable pharmacophoric alignment. The top 100 hits were subjected to short 10 ns molecular dynamics (MD) simulations and MM/GBSA binding energy calculations, narrowing down to 36 promising ligands. These were further evaluated through longer (100 ns) MD simulations, binding energy refinement, ligand clustering based on molecular fingerprints, and cancer-specific activity predictions using a binary QSAR model. Twelve compounds demonstrated favorable binding profiles, structural diversity, and high predicted anticancer activity, such as xantifibrate, etofylline clofibrate, and carafiban. This multi-tiered hybrid virtual screening pipeline highlights the potential of drug repurposing for the rapid identification of USP7 inhibitors, offering a cost-effective path toward novel anticancer therapeutics. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Kanan, T., Kanan, D., Erol, I., Dogan, B., Durdagi, S. ]]>
+</dc:creator>
+<dc:date>2025-04-11</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647568</dc:identifier>
+<dc:title>
+<![CDATA[ Targeting Ubiquitin-Specific Protease 7 (USP7): A Pharmacophore-Guided Drug Repurposing and Physics-Based Molecular Simulations Study ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-11</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.07.647506v1?rss=1">
+<title>
+<![CDATA[ Spatial artefact detection improves reproducibility of drug screening experiments ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.07.647506v1?rss=1 </link>
+<description>
+<![CDATA[ Reliable and reproducible drug screening experiments are essential for drug discovery and personalized medicine. Here, we demonstrate how systematic experimental errors negatively impact reproducibility, and that conventional quality control (QC) methods based on plate controls fail to detect these errors. To address this limitation, we developed a control-independent QC approach using normalized residual fit error (NRFE) to identify systematic errors in drug screening experiments. Comprehensive analysis of >100,000 duplicate measurements from the PRISM pharmacogenomic study revealed that the NRFE-flagged experiments show three-fold lower reproducibility between technical replicates. By integrating NRFE with existing QC methods to analyze 41,762 matched drug-cell line pairs between two datasets from the Genomics of Drug Sensitivity in Cancer project, we improved the cross-dataset correlation from 0.66 to 0.76. Available as an R package at https://github.com/IanevskiAleksandr/plateQC, plateQC provides a robust toolset for enhancing drug screening data reliability and consistency for basic research and translational applications. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Ianevski, A., Nader, K., Potdar, S., Gorbonos, A., Ianevski, F., Tanoli, Z., Saarela, J., Aittokallio, T. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.07.647506</dc:identifier>
+<dc:title>
+<![CDATA[ Spatial artefact detection improves reproducibility of drug screening experiments ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.06.647478v1?rss=1">
+<title>
+<![CDATA[ Cancer Cell Adaptation to Cycling Hypoxia: Integrating Mathematical Modeling with Experimental Validation of HIF-1 Dynamics ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.06.647478v1?rss=1 </link>
+<description>
+<![CDATA[ The adaptive response of cancer cells to hypoxia, a key microenvironmental factor in solid tumors, is intricately orchestrated by Hypoxia-inducible factor 1 (HIF1). Evidence is accumulating on oxygen dynamics in tumor cores, showing that hypoxia is frequently unstable, or cycling, associated with specific phenotypic outcomes for the cancer. Transcriptomic analysis show that most gene expression changes in cycling hypoxia lie in between the change caused by stable hypoxia, suggesting multi-cycle averaging of dosage in the oxygen tension, and likely HIF-1 induced transcription. However, small subset of genes show an oscillation/cycling hypoxia specific response, suggesting that the transcriptional machinery of these genes may interpret cycling HIF-1 activity differently from stably high HIF-1 activity. Here, we model a gene regulatory circuit, the incoherent feed-forward loops (IFFLs) to explore parameter regimes where oscillatory specific transcription is plausible. In these IFFL models, HIF-1 regulates gene transcription of a target gene directly, as well indirectly via another transcription factor with an opposite effect on gene transcription. We have identified several plausible parameter regimes where oscillation specific gene expression can occur, with potentially significant effect on cancer growth and progression. Finally, we experimentally confirmed that HIF-1 can form IFFLs with two key transcription factors p53, and Notch1, resulting in cycling hypoxia specific gene expression linked to breast cancer progression and poor prognosis. Our models mechanistically reveal how temporal fluctuations in the tumor microenvironment may directly inform downstream transcription, identify hitherto unknown HIF-1 driven mechanism of cancer progression contributing to emergent tumor heterogeneity. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Qiu, X., Liu, Y., Agmon, E., Vera-Licona, P., Kshitiz,, Suhail, Y. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.06.647478</dc:identifier>
+<dc:title>
+<![CDATA[ Cancer Cell Adaptation to Cycling Hypoxia: Integrating Mathematical Modeling with Experimental Validation of HIF-1 Dynamics ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.06.647498v1?rss=1">
+<title>
+<![CDATA[ Discernibility in explanations: an approach to designing more acceptable and meaningful machine learning models for medicine ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.06.647498v1?rss=1 </link>
+<description>
+<![CDATA[ Background: Although the benefits of machine learning (ML) are undeniable in healthcare, explainability plays a vital role in improving transparency and understanding the most decisive and persuasive variables for prediction. The challenge is to identify explanations that make sense to the biomedical expert. This work proposes discernibility as a new approach to faithfully reflect human cognition, with the user's perception of a relationship between explanations and data for a given variable. Methods: A total of 50 participants (19 biomedical and 31 data scientists) evaluated their perception of the discernibility of explanations from both synthetic and human-based dataset (National Health and Nutrition Examination Survey). The inter-rater reliability was tested through the intraclass correlation coefficient (ICC). 13 statistical coefficients were considered to be able to capture for a given variable the relationship between its values and its explanations. A Passing-Bablok regression was performed for each user to highlight the consistency between user rating and each coefficient. Findings: The low inter-rater reliability of discernibility (ICC<0.5) with no difference between areas of expertise or level of education underlines the need for an objective metric of discernibility. Among all evaluated metrics, dcor metric was found to be the most suitable to capture the intra-individual reliability of discernibility perceived by users (median slope closer to 1 and a narrower confidence interval width for the Passing-Bablok regression with the lowest differential bias between the most and least discernible values). Interpretation: dcor was shown to be a reliable metric for assessing the discernibility of explanations, effectively capturing the clarity of the relationship between the data and their explanations, and providing clues to the underlying pathophysiological mechanisms that are not immediately apparent when examining individual predictors. Discernibility can also serve as an evaluation metric for model quality, used to prevent overfitting or aid in feature selection, providing medical practitioners with more accurate and persuasive results. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Wang, H., Aligon, J., May, J., Doumard, E., Labroche, N., Delpierre, C., Soule-Dupuy, C., Casteilla, L., Planat, V., Monsarrat, P. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.06.647498</dc:identifier>
+<dc:title>
+<![CDATA[ Discernibility in explanations: an approach to designing more acceptable and meaningful machine learning models for medicine ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.04.647214v1?rss=1">
+<title>
+<![CDATA[ Menger_Curvature : a MDAKit implementation to decipher the dynamics, curvatures and flexibilities of polymeric backbones at the residue level ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.04.647214v1?rss=1 </link>
+<description>
+<![CDATA[ Characterizing the dynamics of the backbone of flexible polymers such as Intrinsically Disordered Regions and Proteins (IDRs and IDPs) has proven to be a significant challenge in molecular dynamics (MD) simulations due to the high conformational variability. The widely-used mobility metric Root-Mean-Squared Fluctuations (RMSF) is powerless to provide information as defining a relevant reference structure is often not possible. We previously introduced a new flexibility metric to remedy this gap : the Local Flexibilities (LFs), derived -alongside the Local Curvatures (LCs)- from the Proteic Menger Curvatures (PMCs). Here we present a numba accelerated implementation for any polymer of the calculation of Menger curvatures as a MDAKit from the widely-used MDAnalysis package. We perform a benchmark with the RMSF and another flexibility metric derived from Proteic Blocks (PBs), the Equivalent Number of PBs (Neq), and show that the PMCs are an order of magnitude faster to compute on a modern CPU chip. We applied all 3 flexibility metrics to a {beta}III-tubulin monomer as an example, as tubulins are known to possess the entire range of proteic elements, from -helix and {beta}-sheets to a flexible loop and a disordered C-terminal tail (CTT). RMSF, LFs and Neq all succeed in identifying the flexible loops and the CTT, although the RMSF requires a system-specific alignment to do so. We believe that Menger curvatures will prove to be a valuable metric to study protein dynamics and polymers in general. The MDAKit package Menger_Curvature is readily available at https://github.com/EtienneReboul/menger_curvature ]]>
+</description>
+<dc:creator>
+<![CDATA[ Reboul, E., Marien, J., Prevost, C., Taly, A., Sacquin-Mora, S. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.04.647214</dc:identifier>
+<dc:title>
+<![CDATA[ Menger_Curvature : a MDAKit implementation to decipher the dynamics, curvatures and flexibilities of polymeric backbones at the residue level ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.04.647160v1?rss=1">
+<title>
+<![CDATA[ Label-free droplet image analysis with Cellprofiler ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.04.647160v1?rss=1 </link>
+<description>
+<![CDATA[ Droplet microfluidic methods used for microbiological experiments are fast, cost-effective, and provide high-throughput data. However, analysis of such image data can be difficult, and detection of molecular labels is limited by microscope parameters. Currently, there is lack of user-friendly methods to analyse a large volume of label-free droplet images without the need for trained personnel, or expensive, proprietary software. Such methods would make droplet microfluidic technology more widely accessible for a larger range of biological applications. In this paper we demonstrate an image analysis pipeline designed using Cellprofiler, a free, open-source software. This pipeline identifies water-in-oil microfluidic droplets, microplastic particles, and bacterial growth without using fluorescent or other labels. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Kacsor, D., Saar-Abroi, M., Olman, T., Bartkova, S., Scheler, O. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.04.647160</dc:identifier>
+<dc:title>
+<![CDATA[ Label-free droplet image analysis with Cellprofiler ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.04.647182v1?rss=1">
+<title>
+<![CDATA[ Exo-Tox: Identifying Exotoxins from secreted bacterial proteins ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.04.647182v1?rss=1 </link>
+<description>
+<![CDATA[ BackgroundBacterial exotoxins are secreted proteins able to affect target cells, and associated with diseases. Their accurate identification can enhance drug discovery and ensure the safety of bacteria-based medical applications. However, current toxin predictors prioritize broad coverage by mixing toxins from multiple biological kingdoms and diverse control sets. This general approach has proven sub-optimal for identifying niche toxins, such as bacterial exotoxins. Recent Protein Language Models offer an opportunity to improve toxin prediction by capturing global sequence context and biochemical properties from protein sequences. ResultsWe introduce Exo-Tox, a specialized predictor trained exclusively on curated datasets of bacterial exotoxins and secreted non-toxic bacterial proteins, represented as embeddings by Protein Language Models. Compared to Basic Local Alignment Search Tool (BLAST)-based methods and generalized toxin predictors, Exo-Tox outperforms across multiple metrics, achieving an Matthews correlation coefficient > 0.9. Notably, Exo-Toxs performance remains robust regardless of protein length or the presence of signal peptides. We analyze its limited transfer-ability to bacteriophage proteins and non-secreted proteins. ConclusionExo-Tox reliably identifies bacterial exotoxins, filling a niche overlooked by generalized predictors. Our findings highlight the importance of domain-specific training data and emphasize that specialized predictors are necessary for accurate classification. We provide open access to the model, training data, and usage guidelines via the LMU Munich Open Data repository. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Krueger, T., Durmaz, D. A., Jimenez Soto, L. F. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.04.647182</dc:identifier>
+<dc:title>
+<![CDATA[ Exo-Tox: Identifying Exotoxins from secreted bacterial proteins ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.06.647452v1?rss=1">
+<title>
+<![CDATA[ Generating three-dimensional genome structures with a variational quantum algorithm ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.06.647452v1?rss=1 </link>
+<description>
+<![CDATA[ Chromosome conformation capture (3C) experiments have revealed the underlying spatial interactions that govern three-dimensional (3D) genome organization and topology. Detecting 3D contacts between genomic loci considerably enhances our understanding of fundamental regulatory processes. Modeling 3D structures from experimental contact matrices can further contextualize the relationship between 3D genome organization and regulation. While classical algorithms have been successful in reconstructing genomic conformations, we investigate the prospect of quantum computation to aid in modeling the conformational space. In this context, we propose a novel variational quantum algorithm to model the distribution of 3D genomic structures from experimental contact data. Through rigorous evaluations, we demonstrate the capability of our algorithm to sample ensembles of viable 3D conformations that agree well with experimental and simulated contact data. Furthermore, we extend our methodology to model the conformational space of a single cell or a population of cells. In the advent of sufficient quantum utility, the insights gained from this study can serve as a foundation for investigating high-resolution, large-scale ensembles of genomic conformations through generative variational quantum algorithms. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Siciliano, A. J., Wang, Z. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.06.647452</dc:identifier>
+<dc:title>
+<![CDATA[ Generating three-dimensional genome structures with a variational quantum algorithm ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.10.648097v1?rss=1">
+<title>
+<![CDATA[ EnviroAmpDesigner, a tool for designing high specificity multiplex PCR primer panels for detecting and subtyping a target organism in environmental surveillance samples ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.10.648097v1?rss=1 </link>
+<description>
+<![CDATA[ BackgroundAmplicon sequencing is a popular method for understanding the diversity of bacterial communities in environmental or similar samples as exemplified by 16S rRNA sequencing. This approach has been extended into multiplex amplicon sequencing in which multiple targets are amplified in the same PCR reaction such as virus sequencing using tiled amplicons. Multiple tools exist to design PCR primers, and some support design of multiplex panels. However, despite increasing interest in the use of environmental or wastewater sampling for detecting and typing specific antimicrobial resistant (AMR) bacteria such as typhoid or cholera agents, we were unable to find a tool for designing a multiplex PCR panel for environmental samples that not only focused on detection of a specific organism, but also on amplifying lineage-specific or AMR-associated alleles of the target organism while minimising amplification of off-target genomes present in the sample. We found that existing tools either depend on the target organism being very distinct from the rest of the organisms in the sample, or focus on detection rather than genotyping of the organism of interest. We have developed EnviroAmpDesigner (v0.1.3, DOI: 10.5281/zenodo.14967337) to fill this gap, which we used to design a multiplex amplicon panel for detection, genotyping and AMR profiling of the typhoidal pathogens Salmonella enterica serovars Typhi and Paratyphi A. EnviroAmpDesigner can design amplicons for both short and long-read sequencing. The software first identifies single nucleotide polymorsphisms (SNPs) that distinguish individual genotypes of the target pathogen (in our case, S. Typhi). It then identifies SNPs that distinguish the target organism from others. Finally, the software designs primers that simultaneously target genotyping SNPs and have at least one primer with a 3 end at each SNP that distinguishes the target organism. The purpose of the latter condition is to increase the specificity of the primers, to minimise amplification of homologous sequences in non-target organisms. While our use case focuses on S. Typhi and Paratyphi A, the tool is organism agnostic and should work for any haploid organism. The tool is freely available via Bioconda and GitHub (https://github.com/AntonS-bio/EnviroAmpDesigner). Impact statementWe have developed EnviroAmpDesigner (v 0.1.3) software to design a multiplexed panel of long-read amplicons for detection and lineage typing of bacteria in environmental samples. We apply this tool to Salmonella Typhi and Paratyphi A, the bacterial agents of typhoid fever, but the tool is organism agnostic. The tool is computationally efficient and can be used on mid-range laptop. It has potential to support more widespread deployment of sequencing-based surveillance for bacterial pathogens in environmental and wastewater samples. Data SummaryFor the purposes of designing primers for S. Typhi and Paratyphi A we used 13,134 samples from the Global Typhoid Genomics Consortium data (target organisms) (1) and 1,810 publicly available Enterobacterales genomes from NCBIs RefSeq database (representing off-target related organisms) (2). To validate the primers, we applied an amplicon sequencing protocol (3) to DNA extracted from two S. Typhi isolates (NCBI accessions SRR5949979 and SRR7165748) provided by Satheesh Nair (UKHSA) (4), and a pooled DNA sample of American Type Culture Collection (ATCC) isolates S. Paratyphi A (ATCC 9150D), S. Paratyphi B (ATCC-BAA-1250D), S. Paratyphi C (ATCC-BAA-1715D), Aeromonas hydrophila (ATCC-7965D), Klebsiella pneumoniae (ATCC-BAA-1706D), and Citrobacter freundii (ATCC-8090D) chosen for their close relationship to S. Typhi. The resulting amplicon sequence data was deposited in European Nucleotide Archive (project accession: PRJEB81565). ]]>
+</description>
+<dc:creator>
+<![CDATA[ Spadar, A., Mahindroo, J., Troman, C., Owusu, M., Abu-Sarkodie, Y., Owusu-Dabo, E., Abraham, D., Benny, B., Govindan, K., Mohan, V. R., Dyson, Z. A., Grassly, N., Holt, K. E. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.10.648097</dc:identifier>
+<dc:title>
+<![CDATA[ EnviroAmpDesigner, a tool for designing high specificity multiplex PCR primer panels for detecting and subtyping a target organism in environmental surveillance samples ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.10.648110v1?rss=1">
+<title>
+<![CDATA[ OBE-DB: A Computational Tool and Web Server for the Prediction of Antiobesity Drugs ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.10.648110v1?rss=1 </link>
+<description>
+<![CDATA[ The huge obesity prevalence and its associated metabolic disorders highlight the urgent need for new therapeutic strategies beyond lifestyle interventions. Despite the availability of novel pharmacological treatments, the search for more effective and safe anti-obesity compounds remains a challenge. Recent advances in high-performance computational drug discovery have enabled the rapid screening and identification of potential anti-obesity compounds. However, these in silico procedures frequently require complex computational knowledge that limits the use of these techniques for most researchers. To address this gap, we have developed OBE-DB, an accessible and user-friendly platform integrating these computational tools that facilitates the prediction of potential anti-obesity molecules through two complementary approaches: (a) shape similarity analysis against a curated database of approved anti-obesity drugs, and (b) inverse virtual screening of user-submitted molecules against a set of therapeutic protein targets linked to obesity. Our results demonstrate that the server effectively screens and ranks compounds with high predicted activity, outperforming conventional in silico techniques in terms of accuracy and usability. This represents a significant advancement by providing researchers with an intuitive tool to accelerate early-stage drug discovery for obesity treatment. The server is freely accessible without registration, providing users with a detailed report via email upon completion of the predictions. This innovative database and web server is accessible online via http://bio-hpc.eu/software/obe-db/. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Murcia-Garcia, E., Martinez-Cortes, C., Banegas-Luna, A. J., Hernandez-Morante, J. J., Perez-Sanchez, H. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.10.648110</dc:identifier>
+<dc:title>
+<![CDATA[ OBE-DB: A Computational Tool and Web Server for the Prediction of Antiobesity Drugs ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.06.647437v1?rss=1">
+<title>
+<![CDATA[ STEAMBOAT: Attention-based multiscale delineation of cellular interactions in tissues ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.06.647437v1?rss=1 </link>
+<description>
+<![CDATA[ Spatial-omics technologies profile cells in their native spatial context within tissues, enabling more complete understanding of cellular properties. However, a key computational challenge remains: identifying cellular interactions that underlie cell types and states - interactions that are essential for spatial organization and provide a biologically grounded framework for understanding cell identities and spatial patterns. These interactions span different distances and thus require multiscale modeling, which remains a major gap in existing methods. Here, we introduce SO_SCPLOWTEAMBOATC_SCPLOW, an interpretable machine learning framework that leverage a self-supervised, multi-head attention model to uniquely decompose gene expression of a cell into multiple key factors: intrinsic cell programs, neighboring cell communication, and long-range interactions. By applying SO_SCPLOWTEAMBOATC_SCPLOW to diverse tissues in health and disease across various spatial-omics technologies, we demonstrate its ability to uncover critical multiscale cellular interactions, capturing classical contact signaling and revealing previously unrecognized patterns of cellular communication. SO_SCPLOWTEAMBOATC_SCPLOW provides a powerful approach for spatial-omics analysis, offering new insights into the multiscale spatial organization of cells and their communication across a wide range of biological contexts. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Liang, S., Tang, J., Wang, G., Ma, J. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.06.647437</dc:identifier>
+<dc:title>
+<![CDATA[ STEAMBOAT: Attention-based multiscale delineation of cellular interactions in tissues ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.06.647429v1?rss=1">
+<title>
+<![CDATA[ Integrative Single-Cell RNA and ATAC Sequencing Reveals the Impact of Chronic Cigarette Smoking on Lung Epithelial Responses to Influenza and Hyperoxia ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.06.647429v1?rss=1 </link>
+<description>
+<![CDATA[ Cigarette smoke (CS) is a significant risk factor for developing acute respiratory distress syndrome (ARDS), but the cellular and molecular mechanisms linking smoking to ARDS susceptibility remain unclear. Our goal was to improve our understanding of these mechanisms. To address this, we established a mouse model comparing long-term CS exposure to non-smoking controls, examining responses to influenza infection and hyperoxia-induced lung injury. The mice were divided into six groups (n=1 per group): control (CON), cigarette smoke (CS), hyperoxia (HYP), influenza infection (FLU), cigarette smoke plus hyperoxia (CS+HYP), and cigarette smoke plus influenza infection (CS+FLU). Single-cell RNA sequencing (scRNA-seq) and single-cell ATAC sequencing (scATAC-seq) were performed on lung tissues. Quality control analysis using Seurat (v5.1.0) and Signac (v1.13.1) retained 78,402 cells from scRNA-seq and 84,144 cells from scATAC-seq, with 32,305 matched cells identified across both datasets. Differential gene expression analysis revealed significant smoking-associated alterations in cellular responses to influenza infection and hyperoxia exposure. Pathway enrichment indicated heightened immune responses, inflammatory signaling, and cellular survival pathways in smoking-exposed animals. Integration of scRNA-seq and scATAC-seq identified key transcription factors (TFs), including those involved in immune regulation, tissue repair, and chromatin remodeling mediating these responses. Overall, this study underscores the role of chronic cigarette smoke exposure in exacerbating pathways critical to ARDS pathogenesis, providing potential targets for therapeutic intervention. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Cha, P.-C., Zou, Z., Nouws, J., Dela Cruz, C., Sharma, L. K., Yan, X., Sauler, M. ]]>
+</dc:creator>
+<dc:date>2025-04-10</dc:date>
+<dc:identifier>doi:10.1101/2025.04.06.647429</dc:identifier>
+<dc:title>
+<![CDATA[ Integrative Single-Cell RNA and ATAC Sequencing Reveals the Impact of Chronic Cigarette Smoking on Lung Epithelial Responses to Influenza and Hyperoxia ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-10</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.06.647430v1?rss=1">
+<title>
+<![CDATA[ In Silico Characterization of a Hypothetical Protein from Pseudomonas aeruginosa LESB58: A Structural and Functional Perspective. ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.06.647430v1?rss=1 </link>
+<description>
+<![CDATA[ BackgroundPseudomonas aeruginosa LESB58 is an omnipresent opportunistic bacteria that causes both acute and persistent infections in immunocompromised people. This bacteria is now on the WHOs red list, meaning that new medicines are desperately needed for treatment. Although the bacterial genome is known, many hypothetical proteins have unidentified activities. Annotating hypothetical proteins can be critical steps toward discovering new druggable targets and treatments. In this work, a hypothetical protein of the Pseudomonas aeruginosa LESB58 strain (accession no. CAW29855.1, 284 amino acids) was chosen for in-depth structural and functional research. Methods & ResultsThe target hypothetical proteins subcellular location and other physicochemical characteristics were estimated to indicate that it is cytoplasmic. Using bioinformatics tools, it was determined that the target protein had the conserved domain of the phenazine biosynthesis protein family. Multiple sequence alignment of the target proteins homologous sequence was produced, which helped to create a phylogenetic tree and identify the target proteins common ancestor. The extended strand was mostly present in the secondary structure produced by PSI-PRED. Using a template protein (PDB ID: 1uok.1.A), a 3D model of the target protein was predicted using the SWISS-MODEL service based on the homology modeling idea. After energy reduction via the YASARA tool, which increases the structures stability the SWISS-MODEL structure was evaluated and validated using multiple tools. The RMSD value of 0.347 [A] was produced by superimposing the target with the template protein using UCSF Chimera, indicating a dependable three-dimensional structure. PrankWeb server anticipated and visualized the modeled structures active site. The target proteins with non-homologous protein against the human proteome and human antitargets are finally predicted by a pipeline builder, suggest that this protein may be a possible therapeutic target. ConclusionBy helping P. aeruginosa evade the hosts immune system and form biofilms that contribute to antibiotic resistance and worsen infections, this protein can boost P. aeruginosa pathogenicity. The studys results, which examine both functional and structural features, might help in the creation of novel antibacterial drug targets and Pseudomonas aeruginosa LSB58 medications. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Hossain, S., jannat, A. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.06.647430</dc:identifier>
+<dc:title>
+<![CDATA[ In Silico Characterization of a Hypothetical Protein from Pseudomonas aeruginosa LESB58: A Structural and Functional Perspective. ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.04.647303v1?rss=1">
+<title>
+<![CDATA[ Domain shifts in infant brain diffusion MRI: Quantification and mitigation for fODF estimation ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.04.647303v1?rss=1 </link>
+<description>
+<![CDATA[ The accurate estimation of fiber orientation distributions (fODFs) in diffusion magnetic resonance imaging (MRI) is crucial for understanding early brain development and its potential disruptions. While deep learning (DL) models have shown promise in fODF estimation from neonatal diffusion MRI (dMRI) data, the out-of-domain (OOD) performance of these models remains largely unexplored, especially under diverse domain shift scenarios. This study evaluated the robustness of three state-of-the-art DL architectures--MLP-based, Transformer-based, and U-Net/CNN-based--on fODF predictions derived from diffusion MRI data. Using 488 subjects from the developing Human Connectome Project (dHCP) and the Baby Connectome Project (BCP) datasets, we reconstructed reference fODFs from the full dMRI series using single-shell three-tissue constrained spherical deconvolution (SS3T-CSD) and multi-shell multi-tissue CSD (MSMT-CSD) to generate reference fODF reconstructions for model training, and systematically assessed the impact of age, scanner/protocol differences, and input dimensionality on model performance. Our findings reveal that U-Net consistently outperformed other models when fewer diffusion gradient directions were used, particularly with the SS3T-CSD-derived ground truth, which showed superior performance in capturing crossing fibers. However, as the number of input diffusion gradient directions increased, MLP and the transformer-based model exhibited steady gains in accuracy. Nevertheless, performance nearly plateaued from 28 to 45 input directions in all models. Age-related domain shifts were found to be less pronounced in late developmental stages (late neonates, and babies), with SS3T-CSD demonstrating greater robustness to variability compared to MSMT-CSD. To address inter-site domain shifts, we implemented two adaptation strategies: the Method of Moments (MoM) and fine-tuning. Fine-tuning consistently yielded superior results, with U-Net benefiting the most from increased target subjects. This study represents the first systematic evaluation of OOD settings in deep learning applications to fODF estimation, providing critical insights into model robustness and adaptation strategies for diverse clinical and research applications. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Lin, R., Kebiri, H., Gholipour, A., Chen, Y., Thiran, J.-P., Karimi, D., Bach Cuadra, M. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.04.647303</dc:identifier>
+<dc:title>
+<![CDATA[ Domain shifts in infant brain diffusion MRI: Quantification and mitigation for fODF estimation ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.05.647397v1?rss=1">
+<title>
+<![CDATA[ Diversity of diazotrophs in the Northern Pacific Ocean and sensitivity of the symbiotic unicellular cyanobacteria (UCYN-A) to inorganic nitrogen availability ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.05.647397v1?rss=1 </link>
+<description>
+<![CDATA[ This study investigates the diversity and nutrient responses of diazotrophs, nitrogen-fixing microorganisms critical for marine productivity, across a transect from the California Current System to the North Pacific Subtropical Gyre. Using nifH gene analysis as a proxy for diazotroph presence, we documented shifts in community composition from coastal to oligotrophic waters, with UCYN-A and Pseudomonas dominating transition zones while more diverse communities including Trichodesmium emerged in oligotrophic regions. Nutrient addition experiments tested UCYN-A1 responses to various nitrogen forms (NH{square}{square}, NO{square}{square}, urea), iron, and phosphorus over 48-hour incubations. Results challenge traditional assumptions that diazotrophs prefer low dissolved inorganic nitrogen environments, as UCYN-A1 abundances showed variable but non-negative responses to nitrogen additions. Time-course analyses revealed region-specific utilization patterns: continuous nitrogen utilization from 24-48 hours in the California Current transition zone versus more rapid utilization within the first 24 hours in the North Pacific Subtropical Gyre. These findings contribute to our understanding of nitrogen fixation biogeography and suggest that diazotroph distributions may be more strongly influenced by competition for phosphorus and iron rather than inhibition by fixed nitrogen availability. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Reed, G. M. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.05.647397</dc:identifier>
+<dc:title>
+<![CDATA[ Diversity of diazotrophs in the Northern Pacific Ocean and sensitivity of the symbiotic unicellular cyanobacteria (UCYN-A) to inorganic nitrogen availability ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.05.647412v1?rss=1">
+<title>
+<![CDATA[ Spatial Metagene Discovery and Associated Molecular Pattern Characterization in Spatial Transcriptomics and Multi-Omics using SEPAR ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.05.647412v1?rss=1 </link>
+<description>
+<![CDATA[ Spatially resolved transcriptomics (SRT) has transformed biomedical research by enabling gene expression profiling at near- or sub-cellular resolution while preserving spatial context. However, interpreting SRT data to understand cellular and gene organization remains challenging. Current methods focus on identifying global spatial domains across all genes, but often miss localized structures driven by specific gene subsets. Here, we introduce SEPAR, an unsupervised computational framework designed to analyze SRT data using a limited number of spatial metagenes and their expression patterns. SEPAR integrates gene activity and spatial neighborhood relationships to summarize gene expression per spot/- cell, decomposing data into contributions from spatial metagenes. It supports downstream analyses, including metagene expression pattern-specific gene identification, spatially variable gene (SVG) detection, spatial domain delineation, and gene expression refinement. Applied to diverse datasets, SEPAR demonstrates high efficacy. Gene sets linked to spatial metagene patterns are enriched with meaningful cell types and gene ontologies. SVGs are detected with higher accuracy, and gene refinement enhances biological signals, improving correlation analysis of functionally related genes. In spatial multi-omics data, SEPAR excels at revealing strong correlations between co-localized molecules in spatial CITE-seq data and identifies coordinated gene-peak relationships in MISAR-seq data, offering insights into spatial molecular interactions. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Zhang, L., Zhu, Y., Zhang, S. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.05.647412</dc:identifier>
+<dc:title>
+<![CDATA[ Spatial Metagene Discovery and Associated Molecular Pattern Characterization in Spatial Transcriptomics and Multi-Omics using SEPAR ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.05.647344v1?rss=1">
+<title>
+<![CDATA[ In Silico Evaluation and Therapeutic Targeting of LVDD9B Protein for WSSV Inhibition: Molecular and Ecological Insights for Aquaculture Solutions ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.05.647344v1?rss=1 </link>
+<description>
+<![CDATA[ BackgroundThis study aimed to investigate structural dynamics, binding interactions, stability, pharmacokinetics, ecological risks, and bioactivity of shrimp receptor protein LVDD9B to identify potential therapeutic candidates against White Spot Syndrome Virus (WSSV). MethodsLVDD9B proteins 3D structure was predicted using SWISS-MODEL and validated with ProSA and Ramachandran plots. Protein-protein docking between LVDD9B and VP26 (WSSV protein) was performed using HADDOCK 2.4 server. Molecular docking, dynamics simulations, binding-free energy calculations, principal component analysis (PCA), electrostatic, and vibrational frequency analyses evaluated binding affinity, stability and polarity of complexes. Results128-amino-acids of LVDD9B protein was predicted as predominantly cytoplasmic with stable, and hydrophilic, with structural analysis identified key secondary structures and conserved chitin-binding site. Docking studies revealed strong interactions between LVDD9B and VP26, supported by hydrogen-bonds and salt bridges. Molecular dynamics simulations demonstrated stable complexes with fluctuating RMSD values, and MM/GBSA calculations indicated favorable binding free energies. Pharmacokinetic analysis highlighted promising bioavailability and drug-like properties for Luteolin and Quercetin from Cuscuta reflexa, while ecological assessment identified Cosmosiin as least hazardous, with Quercetin and Luteolin showing higher toxicity. PCA revealed stable protein-ligand complexes with flexibility in Apo form. Isorhoifolin exhibited the lowest internal energy (-2099.4722 Hartree) and highest dipole moment (8.1833 Debye). Frontier orbital analysis showed HOMO-LUMO gaps (4.05-4.34 eV) influencing reactivity, while MEP and vibrational frequency analyses supported compound stability and bioactivity. ConclusionsThis study explores LVDD9Bs structural and interaction dynamics for developing antiviral therapy against WSSV, highlighting therapeutic potential of Cosmosiin, Isorhoifolin, Quercetin and Luteolin based on their pharmacokinetic and ecological profiles. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Iftehimul, M., Hasan, N. A., Akter, M. F., Hossain, M. A., Tima, S. A., Kabir, A., Choudhury, P., Bhowmick, A., Pranto, S. A., Hasan, A. M. W., Ansari, S. A., Rahman, M. H. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.05.647344</dc:identifier>
+<dc:title>
+<![CDATA[ In Silico Evaluation and Therapeutic Targeting of LVDD9B Protein for WSSV Inhibition: Molecular and Ecological Insights for Aquaculture Solutions ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.04.647302v1?rss=1">
+<title>
+<![CDATA[ Quantifying Uncertainty in Phasor-Based Time-Domain Fluorescence Lifetime Imaging Microscopy ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.04.647302v1?rss=1 </link>
+<description>
+<![CDATA[ The phasor approach to time-domain fluorescence lifetime imaging microscopy (FLIM) offers a powerful, fit-free method for analyzing complex fluorescence decay signals. However, its quantitative accuracy is fundamentally limited by noise--particularly photon shot noise--which introduces variability and bias in lifetime estimation and fluorophore unmixing. In this study, we present a theoretical uncertainty model for phasor-based time-domain FLIM that analytically captures the propagation of shot noise and quantifies its impact on phasor coordinates and fluorophore weight estimation. We validate the model using Monte Carlo simulations and experimental data acquired from standard fluorescent dyes and biological tissue samples. Our model improves the overall reliability and efficiency of phasor-based time-domain FLIM, particularly in photon-limited imaging applications. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Chen, Q., Park, J., Mu, S., Gao, L. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.04.647302</dc:identifier>
+<dc:title>
+<![CDATA[ Quantifying Uncertainty in Phasor-Based Time-Domain Fluorescence Lifetime Imaging Microscopy ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.06.646254v1?rss=1">
+<title>
+<![CDATA[ A global P-Process map to avoid P-value abuse ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.06.646254v1?rss=1 </link>
+<description>
+<![CDATA[ P-abuse is serious in difference identification analysis of data. How to avoid P-abuse is a huge challenge. Here, we evolve P-value (a single value) to P-Process (a global landscape of P-values under different sample size) to help researchers correctly recognize and use p-value. We observed -ln(P-Process) after rotation has very similar morphology with Wiener Process (or Brownian motion). Based on this property, for any sample size, we estimated the 95% fluctuation range of P-value and further estimated how many samples (N95()) could make sure 95% of P-values less than the given significant level . Tests proved that the estimation obtains a good performance with only a small number of samples in each group. For broader accessibility, a free web-service, P-Process Map, is available online to show the whole landscape of P-Process. At the end of the article, we explained 10 of the most typical P-abuse problems which can be easily voided by using P-Process. This "rethinking" of P-value from a higher position, which is profoundly different from the way we have seen this for the past century, would yield a new era - 2P era in which hypothesis testing is strongly required to evolve from P-value to P-Process. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Xu, J., Wei, S., Tao, J., Sun, C., Chen, H., Duan, L., Shang, Z., Lyu, W., Lyu, H., Zhang, M., Jiang, Y. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.06.646254</dc:identifier>
+<dc:title>
+<![CDATA[ A global P-Process map to avoid P-value abuse ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.08.645087v1?rss=1">
+<title>
+<![CDATA[ Self-contrastive learning enables interference-resilient and generalizable fluorescence microscopy signal detection without interference modeling ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.08.645087v1?rss=1 </link>
+<description>
+<![CDATA[ Every weak signal in fluorescence microscopy may contain critical biological information. However, the interference resilience required to detect such signals has traditionally relied on task-specific interference modeling, which limits generalizability. Here, we present a self-contrastive learning-based signal detection solution that achieves interference resilience without the need for interference modeling, thereby offering high generalizability. The method, DEPAF (deep pattern fitting), is a module that contrasts asynchronously generated data views from asymmetric model paths to extract signals from interference, while incorporating highly parallel signal recognition and localization in the process. In benchmark tests, we show that DEPAF improves the detection rate of ultra-high-density signals under low signal-to-noise ratio conditions by an order of magnitude. It is also compatible with, and substantially enhances the performance of various imaging techniques, such as super-resolution imaging, spatial transcriptomic imaging, and two-photon calcium imaging. DEPAF is expected to advance the signal-centric fluorescence microscopy techniques and inspire further advancements, especially in the era of image-based multi-omics. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Zhang, F., Huang, R., Xin, M., Meng, H., Gao, D., Fu, Y., Gao, J., Ji, X. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.08.645087</dc:identifier>
+<dc:title>
+<![CDATA[ Self-contrastive learning enables interference-resilient and generalizable fluorescence microscopy signal detection without interference modeling ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1?rss=1">
+<title>
+<![CDATA[ Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1?rss=1 </link>
+<description>
+<![CDATA[ BackgroundThere has been significant interest in genomics research, leading to the development of numerous new methods. One notable area of progress is in chromosome looping detection algorithms (also known as loop callers). However, despite these advancements, there is no available platform to analyze, compare, or benchmark current tools results on the go. Developing such a platform is crucial to accelerate research and ensure the reliability and effectiveness of new methods in the field. ResultsHence, in this work, we propose Robin, an advanced ready-to-go platform for comparative loop caller result analysis leveraging Large Language Models (LLMs). Robin is a web server designed to analyze loop caller results, offering a comprehensive range of analysis metrics such as recovery and overlap. It is integrated with HiGlass and incorporates LLMs to enable users to generate plots simply by providing instructions. ConclusionsOverall, Robin is a robust and comprehensive loop caller result analysis and visualization tool. It is publicly accessible at http://hicrobin.online, with a comprehensive documentation available at http://documentation.hicrobin.online/. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Chowdhury, H. M. A. M., Fuller, M., Oluwadare, O. E. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.05.646688</dc:identifier>
+<dc:title>
+<![CDATA[ Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+<item rdf:about="https://www.biorxiv.org/content/10.1101/2025.04.08.647715v1?rss=1">
+<title>
+<![CDATA[ Bridging data gaps: predicting inadequate micronutrient intake with machine learning ]]>
+</title>
+<link> https://www.biorxiv.org/content/10.1101/2025.04.08.647715v1?rss=1 </link>
+<description>
+<![CDATA[ Identifying populations at risk of inadequate micronutrient intake is useful for governments and humanitarian organizations in low- and middle-income countries to make informed and timely decisions on nutrition relevant policies and programmes. We propose a machine-learning methodological approach using secondary data on household dietary diversity, socioeconomic status, and climate indicators to predict the risk of inadequate micronutrient intake in Ethiopia and in Nigeria. We identify key predictive features common to both countries, and we demonstrate the models transferability from one country to another to predict risk of inadequate micronutrient intake in contexts where nationally representative primary data are unavailable. ]]>
+</description>
+<dc:creator>
+<![CDATA[ Voukelatou, V., Tang, K., Lauzana, I., Jangid, M., Martini, G., de Pee, S., Knight, F., Piovani, D. ]]>
+</dc:creator>
+<dc:date>2025-04-09</dc:date>
+<dc:identifier>doi:10.1101/2025.04.08.647715</dc:identifier>
+<dc:title>
+<![CDATA[ Bridging data gaps: predicting inadequate micronutrient intake with machine learning ]]>
+</dc:title>
+<dc:publisher>Cold Spring Harbor Laboratory</dc:publisher>
+<prism:publicationDate>2025-04-09</prism:publicationDate>
+<prism:section/>
+</item>
+</rdf:RDF>

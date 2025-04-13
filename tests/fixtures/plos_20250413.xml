@@ -1,0 +1,106 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>PLOS Computational Biology: New Articles</title>
+<link href="https://journals.plos.org/ploscompbiol/" rel="alternate"/>
+<author>
+<name>PLOS</name>
+<uri>https://journals.plos.org/ploscompbiol/</uri>
+<email>webmaster@plos.org</email>
+</author>
+<subtitle type="text"/>
+<id>https://journals.plos.org/ploscompbiol/feed/atom</id>
+<rights>All PLOS articles are Open Access.</rights>
+<icon>https://journals.plos.org/ploscompbiol/resource/img/favicon.ico</icon>
+<logo>https://journals.plos.org/ploscompbiol/resource/img/favicon.ico</logo>
+<updated>2025-04-13T11:14:47Z</updated>
+<entry>
+<title>Dynamic brain connectivity predicts emotional arousal during naturalistic movie-watching</title>
+<link href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012994" rel="alternate" title="Dynamic brain connectivity predicts emotional arousal during naturalistic movie-watching"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012994.PDF" rel="related" title="(PDF) Dynamic brain connectivity predicts emotional arousal during naturalistic movie-watching" type="application/pdf"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012994.XML" rel="related" title="(XML) Dynamic brain connectivity predicts emotional arousal during naturalistic movie-watching" type="text/xml"/>
+<author>
+<name>Jin Ke</name>
+</author>
+<author>
+<name>Hayoung Song</name>
+</author>
+<author>
+<name>Zihan Bai</name>
+</author>
+<author>
+<name>Monica D. Rosenberg</name>
+</author>
+<author>
+<name>Yuan Chang Leong</name>
+</author>
+<id>10.1371/journal.pcbi.1012994</id>
+<updated>2025-04-11T14:00:00Z</updated>
+<published>2025-04-11T14:00:00Z</published>
+<content type="html"><p>by Jin Ke, Hayoung Song, Zihan Bai, Monica D. Rosenberg, Yuan Chang Leong</p> Human affective experience varies along the dimensions of valence (positivity or negativity) and arousal (high or low activation). It remains unclear how these dimensions are represented in the brain and whether the representations are shared across different individuals and diverse situational contexts. In this study, we first utilized two publicly available functional MRI datasets of participants watching movies to build predictive models of moment-to-moment emotional arousal and valence from dynamic functional brain connectivity. We tested the models by predicting emotional arousal and valence both within and across datasets. Our results revealed a generalizable arousal representation characterized by the interactions between multiple large-scale functional networks. The arousal representation generalized to two additional movie-watching datasets with different participants viewing different movies. In contrast, we did not find evidence of a generalizable valence representation. Taken together, our findings reveal a generalizable representation of emotional arousal embedded in patterns of dynamic functional connectivity, suggesting a common underlying neural signature of emotional arousal across individuals and situational contexts. We have made our model and analysis scripts publicly available to facilitate its use by other researchers in decoding moment-to-moment emotional arousal in novel datasets, providing a new tool to probe affective experience using fMRI.</content>
+</entry>
+<entry>
+<title>Biases in neural population codes with a few active neurons</title>
+<link href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012969" rel="alternate" title="Biases in neural population codes with a few active neurons"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012969.PDF" rel="related" title="(PDF) Biases in neural population codes with a few active neurons" type="application/pdf"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012969.XML" rel="related" title="(XML) Biases in neural population codes with a few active neurons" type="text/xml"/>
+<author>
+<name>Sander W Keemink</name>
+</author>
+<author>
+<name>Mark CW van Rossum</name>
+</author>
+<id>10.1371/journal.pcbi.1012969</id>
+<updated>2025-04-11T14:00:00Z</updated>
+<published>2025-04-11T14:00:00Z</published>
+<content type="html"><p>by Sander W Keemink, Mark CW van Rossum</p> Throughout the brain information is coded in the activity of multiple neurons at once, so called population codes. Population codes are a robust and accurate way of coding information. One can evaluate the quality of population coding by trying to read out the code with a decoder, and estimate the encoded stimulus. In particular when neurons are noisy, coding accuracy has extensively been evaluated in terms of the trial-to-trial variation in the estimate. While most decoders yield unbiased estimators if neurons are actived, when only a few neurons are active, biases readily emerge. That is, even after averaging, a systematic difference between the true stimulus and its estimate remains. We characterize the shape of this bias for different encoding models (rectified cosine tuning and von Mises functions), show that it can be both attractive or repulsive for different stimulus values. Biases appear for maximum likelihood and Bayesian decoders. The biases have a non-trivial dependence on noise. We also introduce a technique to estimate the bias and variance of Bayesian least square decoders. The work is of interest to those studying neural populations with a few active neurons.</content>
+</entry>
+<entry>
+<title>Virtual epilepsy patient cohort: Generation and evaluation</title>
+<link href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012911" rel="alternate" title="Virtual epilepsy patient cohort: Generation and evaluation"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012911.PDF" rel="related" title="(PDF) Virtual epilepsy patient cohort: Generation and evaluation" type="application/pdf"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012911.XML" rel="related" title="(XML) Virtual epilepsy patient cohort: Generation and evaluation" type="text/xml"/>
+<author>
+<name>Borana Dollomaja</name>
+</author>
+<author>
+<name>Huifang E. Wang</name>
+</author>
+<author>
+<name>Maxime Guye</name>
+</author>
+<author>
+<name>Julia Makhalova</name>
+</author>
+<author>
+<name>Fabrice Bartolomei</name>
+</author>
+<author>
+<name>Viktor K. Jirsa</name>
+</author>
+<id>10.1371/journal.pcbi.1012911</id>
+<updated>2025-04-11T14:00:00Z</updated>
+<published>2025-04-11T14:00:00Z</published>
+<content type="html"><p>by Borana Dollomaja, Huifang E. Wang, Maxime Guye, Julia Makhalova, Fabrice Bartolomei, Viktor K. Jirsa</p> Epilepsy is a prevalent brain disorder, characterized by sudden, abnormal brain activity, making it difficult to live with. One-third of people with epilepsy do not respond to anti-epileptic drugs. Drug-resistant epilepsy is treated with brain surgery. Successful surgical treatment relies on identifying brain regions responsible for seizure onset, known as epileptogenic zones (EZ). Despite various methods for EZ estimation, evaluating their efficacy remains challenging due to a lack of ground truth for empirical data. To address this, we generated and evaluated a cohort of 30 virtual epilepsy patients, using patient-specific anatomical and functional data from 30 real drug-resistant epilepsy patients. This personalized modeling, based on the patient’s brain data, is called a virtual brain twin. For each virtual patient, we provided data that included anatomically parcellated brain regions, structural connectivity, reconstructed intracranial electrodes, simulated brain activity at both the brain region and electrode levels, and key parameters of the virtual brain twin. These key parameters, which include the EZ hypothesis, serve as the ground-truth for simulated brain activity. For each virtual brain twin, we generated synthetic spontaneous seizures, stimulation-induced seizures and interictal activity. We systematically evaluated these simulated brain signals by quantitatively comparing them against their corresponding empirical intracranial recordings. Simulated signals based on patient-specific EZ captured spatio-temporal seizure generation and propagation. Through in-silico exploration of stimulation parameters, we also demonstrated the role of patient-specific stimulation location and amplitude in reproducing empirically stimulated seizures. The virtual epileptic cohort is openly available, and can be directly used to systematically evaluate methods for the estimation of EZ or source localization using ground truth EZ parameters and source signals.</content>
+</entry>
+<entry>
+<title>How does date-rounding affect phylodynamic inference for public health?</title>
+<link href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012900" rel="alternate" title="How does date-rounding affect phylodynamic inference for public health?"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012900.PDF" rel="related" title="(PDF) How does date-rounding affect phylodynamic inference for public health?" type="application/pdf"/>
+<link href="https://journals.plos.org/ploscompbiol/article/asset?id=10.1371/journal.pcbi.1012900.XML" rel="related" title="(XML) How does date-rounding affect phylodynamic inference for public health?" type="text/xml"/>
+<author>
+<name>Leo A. Featherstone</name>
+</author>
+<author>
+<name>Danielle J. Ingle</name>
+</author>
+<author>
+<name>Wytamma Wirth</name>
+</author>
+<author>
+<name>Sebastian Duchene</name>
+</author>
+<id>10.1371/journal.pcbi.1012900</id>
+<updated>2025-04-11T14:00:00Z</updated>
+<published>2025-04-11T14:00:00Z</published>
+<content type="html"><p>by Leo A. Featherstone, Danielle J. Ingle, Wytamma Wirth, Sebastian Duchene</p> Phylodynamic analyses infer epidemiological parameters from pathogen genome sequences for enhanced genomic surveillance in public health. Pathogen genome sequences and their associated sampling dates are the essential data in every analysis. However, sampling dates are usually associated with hospitalisation or testing and can sometimes be used to identify individual patients, posing a threat to patient confidentiality. To lower this risk, sampling dates are often given with reduced date-resolution to the month or year, which can potentially bias inference. Here, we introduce a practical guideline on when date-rounding biases the inference of epidemiologically important parameters across a diverse range of empirical and simulated datasets. We show that the direction of bias varies for different parameters, datasets, and tree priors, while compounding with lower date-resolution and higher substitution rates. We also find that bias decreases for datasets with longer sampling intervals, implying that our guideline is most applicable to emerging datasets. We conclude by discussing future solutions that prioritise patient confidentiality and propose a method for safer sharing of sampling dates that translates them them uniformly by a random number.</content>
+</entry>
+</feed>
