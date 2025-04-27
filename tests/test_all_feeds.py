@@ -1,4 +1,4 @@
-"""Tests for the reader.feed module."""
+"""Tests for the fastfeedparser module."""
 import pathlib
 import pytest
 
