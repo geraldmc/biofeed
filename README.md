@@ -159,6 +159,44 @@ compatible with Unix-based systems.
 ================================================================================
 ```
 
+## Python API Usage
+
+BioFeed can also be used as a Python library in your own projects:
+
+```python
+import biofeed
+
+# Get available feeds
+feeds = biofeed.get_available_feeds()
+print(feeds)
+
+# Get articles from a specific feed
+articles = biofeed.get_articles(feed_id='nature_bioinformatics', count=5)
+for article in articles:
+    print(f"{article.title} ({article.published})")
+
+# Add a new feed
+feed_id = biofeed.add_feed("My Feed", "https://example.com/feed.xml", "custom")
+```
+
+For more advanced usage:
+
+```python
+from biofeed import ReaderController, FeedRegistry, FeedSource
+
+# Create a controller
+controller = ReaderController()
+
+# Select a feed
+controller.select_feed('nature_bioinformatics')
+
+# Get recent articles
+articles = controller.get_recent_articles(count=10)
+
+# Search for articles
+results = controller.search_articles("CRISPR")
+```
+
 ## Project Structure
 
 ```
