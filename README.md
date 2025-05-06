@@ -104,10 +104,10 @@ $ biofeed feeds --list
 
 Available feeds:
 biorxiv		bioRxiv Bioinformatics
-bmc		    BMC Bioinformatics
+bmc		BMC Bioinformatics
 oxford		Oxford Bioinformatics
 nature		Nature Bioinformatics
-plos		  PLOS Computational Biology
+plos		PLOS Computational Biology
 
 # Select a feed (e.g., Oxford Bioinformatics)
 $ biofeed feeds --select biorxiv
