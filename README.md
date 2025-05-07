@@ -8,12 +8,12 @@ BioFeed helps bioinformatics researchers stay up-to-date with the latest publica
 
 ## Features
 
+- Simple and intuitive command-line interface
 - Browse recent articles from multiple bioinformatics sources
 - Support for RSS, Atom, and JSON feed formats
 - Manage multiple feed sources (add, remove, list)
 - Select active feed to browse
 - Read article details including title, publication date, authors, and abstract
-- Simple and intuitive command-line interface
 - Caching system to reduce network requests and improve performance
 - Standardized article representation regardless of source format
 
@@ -56,7 +56,6 @@ The project requires the following dependencies:
 - requests (for HTTP requests)
 - beautifulsoup4 (for HTML parsing)
 - dateparser (for handling various date formats)
-- lxml (XML processing)
 
 See `requirements.txt` or `pyproject.toml` for a complete list.
 
@@ -141,19 +140,9 @@ evade the host immune system and manipulate other host cellular processes.
 Detecting these events--where pathogen proteins resemble host molecules--is
 challenging due to limitations in the sensitivity, specificity, and scalability
 of current bioinformatics tools. The challenges are pronounced when identifying
-subtle similarities in short protein fragments. Results: We present
-mimicDetector, an optimized bioinformatic pipeline for systematically
-identifying protein-level molecular mimicry between pathogens and their hosts.
-mimicDetector builds on existing k-mer-based approaches with three key
-improvements: (i) improved sensitivity for short-sequence alignments using the
-PAM30 substitution matrix and tuned BLASTP parameters; (ii) a revised k-mer
-filtering strategy based on bitscore differences rather than percent identity;
-(iii) the removal of overly conservative homologue exclusion steps. Applied to
-17 globally important pathogens, mimicDetector identified a broad and
-biologically plausible set of mimicry candidates, including helminth proteins
-mimicking components of the human complement system and a Leishmania infantum
-mimic of Reticulon-4, a regulator of immune cell recruitment. Availability and
-implementation: mimicDetector is freely available at
+subtle similarities in short protein fragments. 
+...
+...
 https://github.com/Kayleerich/mimicDetector/, implemented in Python, and
 compatible with Unix-based systems.
 ================================================================================
@@ -233,9 +222,10 @@ biofeed
 │   │   │   ├── nature_20250319.xml
 │   │   │   ├── oxford_20250413.xml
 │   │   │   └── plos_20250413.xml
-│   │   ├── test_feed_entries.py
+│   │   ├── test_entries.py
 │   │   ├── test_feeds.py
 │   │   └── test_single_feed.py
+│   │   └── test_registry.py
 │   └── utils
 │       └── test_utils.py
 └── uv.lock
@@ -257,7 +247,7 @@ You can add your own feeds using the `feeds --add` command.
 
 BioFeed stores feed configuration in:
 
-`~/.config/bio-reader/feeds.json`
+`~/.config/biofeed/feeds.json`
 
 This file is created automatically when you first run the application.
 
@@ -277,18 +267,6 @@ pytest --cov=reader
 ```
 
 See the Testing section below for more information on writing tests for BioFeed.
-
-## Contributing
-
-Contributions are welcome! Here's how you can contribute:
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add some amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-Please ensure your code follows the project's style guidelines and includes appropriate tests.
 
 ## License
 
