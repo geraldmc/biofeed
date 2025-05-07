@@ -163,3 +163,30 @@ def test_feed_source_get_article_by_id(mock_fetch, mock_parser):
     # Test ID not found
     with pytest.raises(ValueError):
         feed.get_article("nonexistent")
+
+@pytest.mark.parametrize("file_path,expected_count", [
+    (f"{FIXTURES}/nature_20250319.xml", 30),
+    (f"{FIXTURES}/oxford_20250413.xml", 4),
+    (f"{FIXTURES}/plos_20250413.xml", 4)
+])
+def test_feed_source_integration(file_path, expected_count):
+    """Integration test for FeedSource with actual fixture files."""
+    with open(file_path) as f:
+        content = f.read()
+        
+        import fastfeedparser
+        parsed_feed = fastfeedparser.parse(content)
+        
+        # Use patch to replace the fetch method of FeedSource
+        with patch.object(FeedSource, 'fetch', return_value=parsed_feed):
+            feed = FeedSource("Test Feed", "https://example.com/feed.xml")
+            articles = feed.get_articles()
+            print(len(articles))
+            
+            # Verify correct number of articles
+            assert len(articles) == expected_count
+            
+            # Verify essential fields are extracted
+            for article in articles:
+                assert article.title
+                assert article.link
