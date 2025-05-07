@@ -108,7 +108,7 @@ oxford		Oxford Bioinformatics
 nature		Nature Bioinformatics
 plos		PLOS Computational Biology
 
-# Select a feed (e.g., Oxford Bioinformatics)
+# Select a feed (e.g., bioRxiv - the preprint server for biology)
 $ biofeed feeds --select biorxiv
 
 Selected feed 'biorxiv'
