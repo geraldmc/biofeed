@@ -234,11 +234,11 @@ biofeed
 
 BioFeed comes pre-configured with several bioinformatics feeds:
 
-- Nature Bioinformatics (Atom)
-- Nature Genetics (Atom)
-- Nature Methods (Atom)
-- Nature Reviews Cancer (Atom)
+- bioRxiv Bioinformatics (RSS)
+- BMC Bioinformatics (RSS)
 - Oxford Bioinformatics (RSS)
+- Nature Bioinformatics (Atom)
+- PLOS Computational Biology (RSS)
 
 You can add your own feeds using the `feeds --add` command.
 
