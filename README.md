@@ -205,7 +205,6 @@ biofeed
 │   │   │   ├── feed_parser.py
 │   │   │   ├── feed_source.py
 │   │   │   └── registry.py
-│   │   ├── scratch.py
 │   │   └── utils
 │   │       └── config.py
 ├── tests
