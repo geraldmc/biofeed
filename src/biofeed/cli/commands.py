@@ -2,17 +2,19 @@
 """Command-line interface for BioFeed using Typer."""
 
 import typer
-from rich import print
 from typing import Optional, List
 import sys
 
+import typer
+from rich.console import Console
 from biofeed.core.controller import ReaderController
 from biofeed.core.formatter import ArticleFormatter
 
 # Create the main app and controller
-app = typer.Typer(help="Stay up-to-date with the latest bioinformatics publications from various feeds.")
+app = typer.Typer(help="Stay up-to-date with the latest bioinformatics publications!")
 controller = ReaderController()
 formatter = ArticleFormatter()
+console = Console()
 
 # Define a feeds subcommand group
 feeds_app = typer.Typer(help="Manage feed sources")
@@ -65,7 +67,7 @@ def feeds_select(
 
 @app.command()
 def list(
-    count: int = typer.Option(10, "--count", "-c", help="Number of articles to list"),
+    count: int = typer.Option(5, "--count", "-c", help="Number of articles to list"),
     feed: Optional[str] = typer.Option(None, "--feed", "-f", help="Feed to list articles from"),
     summary: bool = typer.Option(False, "--summary", "-s", help="Include article summaries")
 ):
@@ -104,7 +106,9 @@ def read(
     
     try:
         article = controller.get_article(article_id)
-        typer.echo(formatter.format_article_detail(article))
+        
+        #typer.echo(formatter.format_article_detail(article))
+        console.print(formatter.format_article_detail(article))
     except ValueError as e:
         typer.echo(f"Error: {e}")
         raise typer.Exit(1)

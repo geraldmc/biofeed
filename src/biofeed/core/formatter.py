@@ -67,7 +67,7 @@ class ArticleFormatter:
       # Create the formatted output
       lines = [
           f"\n{'=' * 80}",
-          f"TITLE: {article.title}",
+          f"TITLE: [grey]{article.title}",
           f"DATE: {date}",
           f"AUTHORS: {authors}",
           f"URL: {article.link}",
