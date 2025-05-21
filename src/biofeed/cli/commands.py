@@ -64,7 +64,6 @@ def handle_read_command(controller: ReaderController, formatter: ArticleFormatte
         # Handle cleaning content for PLOS articles
         if 'PLOS' in controller.get_active_feed().name:
           # Get the HTML content from the article
-          #article = controller.get_article(0)
           p = re.compile('<p>(.*?)</p>')
           m = p.match(article.content)
           text = article.content[m.span()[1]:]
@@ -72,7 +71,6 @@ def handle_read_command(controller: ReaderController, formatter: ArticleFormatte
           article.content = text
         # Handle cleaning content for Oxford articles
         elif 'Oxford' in controller.get_active_feed().name:
-          #article = controller.get_article(0)
           soup = BeautifulSoup(article.content, "html.parser")
           for data in soup(['style', 'script']):
               # Remove tags
@@ -80,7 +78,6 @@ def handle_read_command(controller: ReaderController, formatter: ArticleFormatte
           text = ' '.join(soup.stripped_strings)
           article.content = text[20:]
         elif 'Nature' in controller.get_active_feed().name:
-          #article = controller.get_article(0)
           html = urlopen(article.link).read()
           soup = BeautifulSoup(html, features="html.parser")
           subtext = soup.find('div', attrs={'class':'c-article-section__content'})
