@@ -53,19 +53,6 @@ def handle_list_command(controller: ReaderController, formatter: ArticleFormatte
     articles = controller.get_recent_articles(count=args.count)
     print(formatter.format_article_list(articles, include_summary=args.summary))
 
-def _handle_read_command(controller: ReaderController, formatter: ArticleFormatter, args: argparse.Namespace) -> None:
-    """Handle the 'read' command."""
-    active_feed = controller.get_active_feed()
-    if not active_feed:
-        print("No feed selected. Use 'feeds --select FEED_ID' to select a feed.")
-        return
-    
-    try:
-        article = controller.get_article(args.article_id)
-        print(formatter.format_article_detail(article))
-    except ValueError as e:
-        print(f"Error: {e}")
-
 def handle_read_command(controller: ReaderController, formatter: ArticleFormatter, args: argparse.Namespace) -> None:
     """Handle the 'read' command."""
     active_feed = controller.get_active_feed()
