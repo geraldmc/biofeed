@@ -1,11 +1,14 @@
 """Command-line interface for BioFeed."""
-
+import re 
+from urllib.request import urlopen
 import argparse
 import sys
 from typing import List, Optional
 
 from biofeed.core.controller import ReaderController
 from biofeed.core.formatter import ArticleFormatter
+from bs4 import BeautifulSoup
+import textwrap
 
 def handle_feeds_command(controller: ReaderController, args: argparse.Namespace) -> None:
     """Handle the 'feeds' command."""
@@ -50,7 +53,7 @@ def handle_list_command(controller: ReaderController, formatter: ArticleFormatte
     articles = controller.get_recent_articles(count=args.count)
     print(formatter.format_article_list(articles, include_summary=args.summary))
 
-def handle_read_command(controller: ReaderController, formatter: ArticleFormatter, args: argparse.Namespace) -> None:
+def _handle_read_command(controller: ReaderController, formatter: ArticleFormatter, args: argparse.Namespace) -> None:
     """Handle the 'read' command."""
     active_feed = controller.get_active_feed()
     if not active_feed:
@@ -59,6 +62,48 @@ def handle_read_command(controller: ReaderController, formatter: ArticleFormatte
     
     try:
         article = controller.get_article(args.article_id)
+        print(formatter.format_article_detail(article))
+    except ValueError as e:
+        print(f"Error: {e}")
+
+def handle_read_command(controller: ReaderController, formatter: ArticleFormatter, args: argparse.Namespace) -> None:
+    """Handle the 'read' command."""
+    active_feed = controller.get_active_feed()
+    if not active_feed:
+        print("No feed selected. Use 'feeds --select FEED_ID' to select a feed.")
+        return  
+    try: # SOME feeds have idiosyncracies in how they handle article content
+        article = controller.get_article(args.article_id)
+        # Handle cleaning content for PLOS articles
+        if 'PLOS' in controller.get_active_feed().name:
+          # Get the HTML content from the article
+          article = controller.get_article(0)
+          p = re.compile('<p>(.*?)</p>')
+          m = p.match(article.content)
+          text = article.content[m.span()[1]:]
+          text = text.replace('\n', '')
+          article.content = text
+        # Handle cleaning content for Oxford articles
+        elif 'Oxford' in controller.get_active_feed().name:
+          article = controller.get_article(0)
+          soup = BeautifulSoup(article.content, "html.parser")
+          for data in soup(['style', 'script']):
+              # Remove tags
+              data.decompose()
+          text = ' '.join(soup.stripped_strings)
+          article.content = text[20:]
+        elif 'Nature' in controller.get_active_feed().name:
+          article = controller.get_article(0)
+          html = urlopen(article.link).read()
+          soup = BeautifulSoup(html, features="html.parser")
+          subtext = soup.find('div', attrs={'class':'c-article-section__content'})
+          article.content = subtext.text
+        elif 'BMC' in controller.get_active_feed().name:
+          pass # no operation needed for BMC articles
+        elif 'bioRxiv' in controller.get_active_feed().name:
+          pass # no operation needed for bioRxiv articles
+        else:
+          pass # no operation
         print(formatter.format_article_detail(article))
     except ValueError as e:
         print(f"Error: {e}")
