@@ -176,3 +176,4 @@ cython_debug/
 
 # Project specific stuff
 scratch.py
+scratch_older.py
