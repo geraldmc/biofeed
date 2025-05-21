@@ -8,7 +8,7 @@ from typing import List, Optional
 from biofeed.core.controller import ReaderController
 from biofeed.core.formatter import ArticleFormatter
 from bs4 import BeautifulSoup
-import textwrap
+from urllib.error import URLError, HTTPError
 
 def handle_feeds_command(controller: ReaderController, args: argparse.Namespace) -> None:
     """Handle the 'feeds' command."""
@@ -57,38 +57,53 @@ def handle_read_command(controller: ReaderController, formatter: ArticleFormatte
     """Handle the 'read' command."""
     active_feed = controller.get_active_feed()
     if not active_feed:
-        print("No feed selected. Use 'feeds --select FEED_ID' to select a feed.")
-        return  
-    try: # SOME feeds have idiosyncracies in how they handle article content
-        article = controller.get_article(args.article_id)
-        # Handle cleaning content for PLOS articles
-        if 'PLOS' in controller.get_active_feed().name:
-          # Get the HTML content from the article
+      print("No feed selected. Use 'feeds --select FEED_ID' to select a feed.")
+      return  
+    
+    try:
+      article = controller.get_article(args.article_id)
+      
+      # Clean article content based on feed source
+      feed_name = controller.get_active_feed().name
+      
+      try:
+        if 'PLOS' in feed_name:
+          # Handle PLOS articles
           p = re.compile('<p>(.*?)</p>')
           m = p.match(article.content)
-          text = article.content[m.span()[1]:]
-          text = text.replace('\n', '')
-          article.content = text
-        # Handle cleaning content for Oxford articles
-        elif 'Oxford' in controller.get_active_feed().name:
+          if m:  # Did we find a match? FIXME: Raise error if not
+            text = article.content[m.span()[1]:]
+            article.content = text.replace('\n', '')
+            
+        elif 'Oxford' in feed_name:
+          # Handle Oxford articles
           soup = BeautifulSoup(article.content, "html.parser")
           for data in soup(['style', 'script']):
-              # Remove tags
-              data.decompose()
-          text = ' '.join(soup.stripped_strings)
-          article.content = text[20:]
-        elif 'Nature' in controller.get_active_feed().name:
-          html = urlopen(article.link).read()
-          soup = BeautifulSoup(html, features="html.parser")
-          subtext = soup.find('div', attrs={'class':'c-article-section__content'})
-          article.content = subtext.text
-        elif 'BMC' in controller.get_active_feed().name:
-          pass # no operation needed for BMC articles
-        elif 'bioRxiv' in controller.get_active_feed().name:
-          pass # no operation needed for bioRxiv articles
-        else:
-          pass # no operation
-        print(formatter.format_article_detail(article))
+            data.decompose()
+          article.content = ' '.join(soup.stripped_strings)
+          
+          # Remove prefix if present
+          prefix_to_remove = "Abstract Motivation"
+          if article.content.startswith(prefix_to_remove):
+            article.content = article.content[len(prefix_to_remove):].lstrip()
+            
+        elif 'Nature' in feed_name:
+          # Handle Nature articles with error handling
+          try:
+            html = urlopen(article.link, timeout=10).read()
+            soup = BeautifulSoup(html, features="html.parser")
+            content_div = soup.find('div', attrs={'class':'c-article-section__content'})
+            if content_div:
+                article.content = content_div.text
+          except (URLError, HTTPError) as e:
+            print(f"Warning: Could not fetch full content from Nature: {e}")
+                  
+      except Exception as parse_error:
+        print(f"Warning: Error cleaning content: {parse_error}")
+        # Continue with original content if parsing fails
+          
+      print(formatter.format_article_detail(article))
+        
     except ValueError as e:
         print(f"Error: {e}")
 
